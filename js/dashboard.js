@@ -64,22 +64,18 @@ const Dashboard = {
     this.renderStats(stats);
     this.renderProposals(proposals);
 
-    // Show candidate sections only if data exists
+    // Comparison charts (radar, bar, table) - always render if any candidate has scores
+    const scoredCandidates = candidates.filter(c => c.scores);
+    if (scoredCandidates.length > 0) {
+      this.renderRadarChart(scoredCandidates);
+      this.renderBarChart(scoredCandidates);
+      this.renderComparisonTable(scoredCandidates);
+    }
+
+    // Candidate cards
     if (candidates && candidates.length > 0) {
-      const candSection = document.getElementById('candidates');
-      const compSection = document.getElementById('comparison-section');
-      if (candSection) candSection.style.display = '';
-      if (compSection) compSection.style.display = '';
       this.renderCandidates(candidates);
 
-      // Only render score charts if candidates have scores
-      if (candidates[0] && candidates[0].scores) {
-        this.renderRadarChart(candidates.filter(c => c.scores));
-        this.renderBarChart(candidates.filter(c => c.scores));
-        this.renderComparisonTable(candidates.filter(c => c.scores));
-      }
-
-      // Candidate search
       const searchInput = document.getElementById('candidate-search');
       if (searchInput) {
         searchInput.addEventListener('input', () => {
@@ -90,12 +86,6 @@ const Dashboard = {
           });
         });
       }
-    }
-
-    // Polls section
-    if (polls) {
-      this.renderPollsChart(polls);
-      this.renderPollsTable(polls);
     }
 
     this.renderIssues(issues);
@@ -152,16 +142,12 @@ const Dashboard = {
     const isEn = I18n.locale === 'en';
 
     grid.innerHTML = candidates.map(c => {
-      const pollBadge = c.poll ? `<span class="badge badge-active" style="margin-left:0.5rem">${c.poll}%</span>` : '';
       const position = c.position ? `<span style="color:var(--text-secondary);font-size:0.75rem">#${c.position}</span> ` : '';
       const planLink = c.plan_url ? `<a href="${c.plan_url}" target="_blank" rel="noopener" style="font-size:0.8rem; display:inline-block; margin-top:0.5rem;">📄 ${isEn ? 'Government Plan' : 'Plan de Gobierno'}</a>` : '';
 
       return `
         <div class="card" style="border-left: 3px solid ${c.color}" data-search="${(c.name + ' ' + c.party).toLowerCase()}">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <div class="card-title" style="color:${c.color}">${position}${c.name}</div>
-            ${pollBadge}
-          </div>
+          <div class="card-title" style="color:${c.color}">${position}${c.name}</div>
           <div class="card-subtitle">${c.party}</div>
           <ul style="margin-top:0.5rem; padding-left:1.2rem; color:var(--text-secondary); font-size:0.82rem;">
             ${c.key_proposals.map(p => `<li>${p}</li>`).join('')}

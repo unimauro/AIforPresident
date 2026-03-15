@@ -21,8 +21,8 @@
     <ul class="nav-links" id="nav-links">
       <li><a href="../index.html" data-i18n="nav.home">Inicio</a></li>
       <li><a href="#proposals">Propuestas IA</a></li>
+      <li><a href="#comparison">Comparativa</a></li>
       <li><a href="#candidates">Candidatos</a></li>
-      <li><a href="#polls">Encuestas</a></li>
       <li><a href="#issues">Problemas</a></li>
       <li>
         <select id="lang-select" class="lang-select">
@@ -59,6 +59,29 @@
       <div id="proposals-grid" class="grid-2"></div>
     </section>
 
+    <!-- Comparison: Radar + Bar + Table (BEFORE candidates) -->
+    <section id="comparison" class="section">
+      <h2 class="section-title">📊 Presidente IA vs Candidatos Reales</h2>
+      <p style="color:var(--text-secondary); margin-bottom:1.5rem; font-size:0.9rem;">
+        Comparación por dimensiones entre el Presidente IA y los principales candidatos presidenciales 2026
+      </p>
+      <div class="grid-2" style="margin-bottom:2rem">
+        <div class="chart-container">
+          <h3 style="margin-bottom:1rem" data-i18n="peru.radar_title">Comparación por Dimensiones</h3>
+          <div style="height:420px">
+            <canvas id="radar-chart"></canvas>
+          </div>
+        </div>
+        <div class="chart-container">
+          <h3 style="margin-bottom:1rem" data-i18n="peru.plan_analysis">Análisis de Planes de Gobierno</h3>
+          <div style="height:420px">
+            <canvas id="bar-chart"></canvas>
+          </div>
+        </div>
+      </div>
+      <div id="comparison-table" class="card" style="padding:0; overflow:hidden;"></div>
+    </section>
+
     <!-- 36 Candidates -->
     <section id="candidates" class="section">
       <h2 class="section-title">🗳️ 36 Candidatos Oficiales — Elecciones 2026</h2>
@@ -71,20 +94,6 @@
         <input type="text" id="candidate-search" class="search-input" placeholder="Buscar candidato o partido...">
       </div>
       <div id="candidates-grid" class="grid-3"></div>
-    </section>
-
-    <!-- Polls Dashboard -->
-    <section id="polls" class="section">
-      <h2 class="section-title">📈 Encuestas de Intención de Voto</h2>
-      <div class="chart-container" style="margin-bottom:1.5rem">
-        <h3 style="margin-bottom:0.5rem">Evolución de Intención de Voto (Dic 2025 - Mar 2026)</h3>
-        <p style="color:var(--text-secondary); font-size:0.8rem; margin-bottom:1rem;">Fuentes: Datum, Ipsos, CPI, IEP · Margen de error: ±2.5pp</p>
-        <div style="height:400px">
-          <canvas id="polls-chart"></canvas>
-        </div>
-      </div>
-      <div id="polls-table-container" class="card" style="padding:0; overflow:hidden;"></div>
-      <p id="polls-disclaimer" style="color:var(--text-secondary); font-size:0.75rem; margin-top:1rem; font-style:italic;"></p>
     </section>
 
     <!-- Issues -->
