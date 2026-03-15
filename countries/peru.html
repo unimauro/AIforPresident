@@ -47,6 +47,27 @@
 
   <div class="container">
 
+    <!-- Comparison: Radar + Bar + Table (FIRST section) -->
+    <section id="comparison" class="section">
+      <h2 class="section-title">📊 Presidente IA vs 36 Candidatos Reales</h2>
+      <p style="color:var(--text-secondary); margin-bottom:1.5rem; font-size:0.9rem;">
+        Comparación por dimensiones entre el Presidente IA y todos los candidatos presidenciales 2026. ¿Quién cubre mejor cada área?
+      </p>
+      <div class="chart-container" style="margin-bottom:2rem">
+        <h3 style="margin-bottom:1rem" data-i18n="peru.radar_title">Comparación por Dimensiones</h3>
+        <div style="height:550px">
+          <canvas id="radar-chart"></canvas>
+        </div>
+      </div>
+      <div class="chart-container" style="margin-bottom:2rem">
+        <h3 style="margin-bottom:1rem" data-i18n="peru.plan_analysis">Análisis de Planes de Gobierno</h3>
+        <div style="height:500px">
+          <canvas id="bar-chart"></canvas>
+        </div>
+      </div>
+      <div id="comparison-table" class="card" style="padding:0; overflow:hidden;"></div>
+    </section>
+
     <!-- Stats -->
     <section class="section">
       <h2 class="section-title">📊 <span data-i18n="peru.stats">Estadísticas del País</span></h2>
@@ -57,29 +78,6 @@
     <section id="proposals" class="section">
       <h2 class="section-title">🤖 <span data-i18n="peru.proposals">Propuestas del Presidente IA</span></h2>
       <div id="proposals-grid" class="grid-2"></div>
-    </section>
-
-    <!-- Comparison: Radar + Bar + Table (BEFORE candidates) -->
-    <section id="comparison" class="section">
-      <h2 class="section-title">📊 Presidente IA vs Candidatos Reales</h2>
-      <p style="color:var(--text-secondary); margin-bottom:1.5rem; font-size:0.9rem;">
-        Comparación por dimensiones entre el Presidente IA y los principales candidatos presidenciales 2026
-      </p>
-      <div class="grid-2" style="margin-bottom:2rem">
-        <div class="chart-container">
-          <h3 style="margin-bottom:1rem" data-i18n="peru.radar_title">Comparación por Dimensiones</h3>
-          <div style="height:420px">
-            <canvas id="radar-chart"></canvas>
-          </div>
-        </div>
-        <div class="chart-container">
-          <h3 style="margin-bottom:1rem" data-i18n="peru.plan_analysis">Análisis de Planes de Gobierno</h3>
-          <div style="height:420px">
-            <canvas id="bar-chart"></canvas>
-          </div>
-        </div>
-      </div>
-      <div id="comparison-table" class="card" style="padding:0; overflow:hidden;"></div>
     </section>
 
     <!-- 36 Candidates -->

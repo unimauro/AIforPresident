@@ -36,7 +36,18 @@
       "Defensa del territorio",
       "Industrialización"
     ],
-    "symbol": "🇵🇪"
+    "symbol": "🇵🇪",
+    "scores": {
+      "education": 4,
+      "security": 5,
+      "economy": 4,
+      "health": 4,
+      "environment": 3,
+      "corruption": 4,
+      "technology": 2,
+      "social": 5,
+      "science": 2
+    }
   },
   {
     "name": "Ricardo Belmont",
@@ -50,7 +61,18 @@
       "Infraestructura hospitalaria",
       "Descentralización fiscal"
     ],
-    "symbol": "🏗️"
+    "symbol": "🏗️",
+    "scores": {
+      "education": 4,
+      "security": 5,
+      "economy": 5,
+      "health": 5,
+      "environment": 3,
+      "corruption": 4,
+      "technology": 3,
+      "social": 4,
+      "science": 2
+    }
   },
   {
     "name": "Alex Gonzáles",
@@ -64,7 +86,18 @@
       "Transición energética",
       "Protección de bosques"
     ],
-    "symbol": "🌿"
+    "symbol": "🌿",
+    "scores": {
+      "education": 5,
+      "security": 3,
+      "economy": 4,
+      "health": 4,
+      "environment": 7,
+      "corruption": 4,
+      "technology": 4,
+      "social": 5,
+      "science": 4
+    }
   },
   {
     "name": "Jorge Nieto",
@@ -78,7 +111,18 @@
       "Meritocracia",
       "Lucha anticorrupción"
     ],
-    "symbol": "⚖️"
+    "symbol": "⚖️",
+    "scores": {
+      "education": 5,
+      "security": 5,
+      "economy": 5,
+      "health": 4,
+      "environment": 4,
+      "corruption": 6,
+      "technology": 4,
+      "social": 4,
+      "science": 4
+    }
   },
   {
     "name": "Francisco Diez-Canseco",
@@ -92,7 +136,18 @@
       "Reducción tributaria",
       "Inversión privada"
     ],
-    "symbol": "🔷"
+    "symbol": "🔷",
+    "scores": {
+      "education": 4,
+      "security": 4,
+      "economy": 6,
+      "health": 4,
+      "environment": 3,
+      "corruption": 4,
+      "technology": 4,
+      "social": 3,
+      "science": 3
+    }
   },
   {
     "name": "Walter Chirinos",
@@ -106,7 +161,18 @@
       "Salud universal",
       "Trabajo digno"
     ],
-    "symbol": "🔵"
+    "symbol": "🔵",
+    "scores": {
+      "education": 5,
+      "security": 4,
+      "economy": 4,
+      "health": 5,
+      "environment": 4,
+      "corruption": 4,
+      "technology": 3,
+      "social": 5,
+      "science": 3
+    }
   },
   {
     "name": "Paul Davis Jaimes",
@@ -120,7 +186,18 @@
       "Economía digital",
       "Emprendimiento"
     ],
-    "symbol": "📈"
+    "symbol": "📈",
+    "scores": {
+      "education": 5,
+      "security": 4,
+      "economy": 5,
+      "health": 4,
+      "environment": 4,
+      "corruption": 4,
+      "technology": 5,
+      "social": 4,
+      "science": 4
+    }
   },
   {
     "name": "Carlos Espá",
@@ -134,7 +211,18 @@
       "Familia tradicional",
       "Seguridad ciudadana"
     ],
-    "symbol": "✝️"
+    "symbol": "✝️",
+    "scores": {
+      "education": 4,
+      "security": 5,
+      "economy": 4,
+      "health": 4,
+      "environment": 3,
+      "corruption": 4,
+      "technology": 3,
+      "social": 4,
+      "science": 2
+    }
   },
   {
     "name": "Carlos Álvarez",
@@ -173,7 +261,18 @@
       "Descentralización",
       "Lucha anticorrupción"
     ],
-    "symbol": "🌅"
+    "symbol": "🌅",
+    "scores": {
+      "education": 4,
+      "security": 5,
+      "economy": 4,
+      "health": 4,
+      "environment": 3,
+      "corruption": 6,
+      "technology": 3,
+      "social": 4,
+      "science": 3
+    }
   },
   {
     "name": "Vladimir Cerrón",
@@ -187,7 +286,18 @@
       "Nacionalización de recursos",
       "Estado plurinacional"
     ],
-    "symbol": "🔴"
+    "symbol": "🔴",
+    "scores": {
+      "education": 5,
+      "security": 4,
+      "economy": 4,
+      "health": 5,
+      "environment": 4,
+      "corruption": 3,
+      "technology": 3,
+      "social": 6,
+      "science": 4
+    }
   },
   {
     "name": "Marisol Pérez Tello",
@@ -201,7 +311,18 @@
       "Derechos humanos",
       "Igualdad de género"
     ],
-    "symbol": "👥"
+    "symbol": "👥",
+    "scores": {
+      "education": 5,
+      "security": 4,
+      "economy": 4,
+      "health": 5,
+      "environment": 4,
+      "corruption": 7,
+      "technology": 4,
+      "social": 6,
+      "science": 4
+    }
   },
   {
     "name": "Roberto Sánchez",
@@ -240,7 +361,18 @@
       "Empleo joven",
       "Infraestructura"
     ],
-    "symbol": "💚"
+    "symbol": "💚",
+    "scores": {
+      "education": 5,
+      "security": 4,
+      "economy": 5,
+      "health": 4,
+      "environment": 3,
+      "corruption": 3,
+      "technology": 4,
+      "social": 4,
+      "science": 3
+    }
   },
   {
     "name": "Armando Massé",
@@ -254,7 +386,18 @@
       "Autonomía regional",
       "Reforma tributaria"
     ],
-    "symbol": "🏛️"
+    "symbol": "🏛️",
+    "scores": {
+      "education": 4,
+      "security": 4,
+      "economy": 4,
+      "health": 4,
+      "environment": 4,
+      "corruption": 4,
+      "technology": 3,
+      "social": 5,
+      "science": 3
+    }
   },
   {
     "name": "Álvaro Paz de la Barra",
@@ -268,7 +411,18 @@
       "Gestión municipal exitosa",
       "Orden y disciplina"
     ],
-    "symbol": "⭐"
+    "symbol": "⭐",
+    "scores": {
+      "education": 4,
+      "security": 7,
+      "economy": 4,
+      "health": 4,
+      "environment": 3,
+      "corruption": 4,
+      "technology": 4,
+      "social": 4,
+      "science": 2
+    }
   },
   {
     "name": "Wolfgang Grozo",
@@ -357,7 +511,18 @@
       "Reforma constitucional",
       "Agua y saneamiento para todos"
     ],
-    "symbol": "🔵"
+    "symbol": "🔵",
+    "scores": {
+      "education": 5,
+      "security": 4,
+      "economy": 4,
+      "health": 5,
+      "environment": 5,
+      "corruption": 5,
+      "technology": 3,
+      "social": 6,
+      "science": 3
+    }
   },
   {
     "name": "Alfonso López Chau",
@@ -396,7 +561,18 @@
       "Estado eficiente",
       "Seguridad jurídica"
     ],
-    "symbol": "🗽"
+    "symbol": "🗽",
+    "scores": {
+      "education": 4,
+      "security": 4,
+      "economy": 6,
+      "health": 4,
+      "environment": 3,
+      "corruption": 4,
+      "technology": 4,
+      "social": 3,
+      "science": 3
+    }
   },
   {
     "name": "Rosario Fernández",
@@ -410,7 +586,18 @@
       "Diálogo nacional",
       "Reforma política"
     ],
-    "symbol": "🛤️"
+    "symbol": "🛤️",
+    "scores": {
+      "education": 5,
+      "security": 4,
+      "economy": 4,
+      "health": 5,
+      "environment": 4,
+      "corruption": 5,
+      "technology": 4,
+      "social": 5,
+      "science": 3
+    }
   },
   {
     "name": "José Williams",
@@ -424,7 +611,18 @@
       "Libre mercado",
       "Reforma policial"
     ],
-    "symbol": "🔷"
+    "symbol": "🔷",
+    "scores": {
+      "education": 4,
+      "security": 7,
+      "economy": 5,
+      "health": 4,
+      "environment": 3,
+      "corruption": 5,
+      "technology": 4,
+      "social": 3,
+      "science": 3
+    }
   },
   {
     "name": "Carlos Jaico",
@@ -438,7 +636,18 @@
       "Gobierno digital",
       "Meritocracia"
     ],
-    "symbol": "💎"
+    "symbol": "💎",
+    "scores": {
+      "education": 5,
+      "security": 4,
+      "economy": 5,
+      "health": 4,
+      "environment": 4,
+      "corruption": 5,
+      "technology": 6,
+      "social": 4,
+      "science": 4
+    }
   },
   {
     "name": "Mario Vizcarra",
@@ -452,7 +661,18 @@
       "Infraestructura",
       "Lucha anticorrupción"
     ],
-    "symbol": "🟡"
+    "symbol": "🟡",
+    "scores": {
+      "education": 5,
+      "security": 5,
+      "economy": 5,
+      "health": 5,
+      "environment": 4,
+      "corruption": 5,
+      "technology": 5,
+      "social": 5,
+      "science": 4
+    }
   },
   {
     "name": "Antonio Ortiz",
@@ -466,7 +686,18 @@
       "Economía social",
       "Medio ambiente"
     ],
-    "symbol": "🛡️"
+    "symbol": "🛡️",
+    "scores": {
+      "education": 4,
+      "security": 4,
+      "economy": 4,
+      "health": 5,
+      "environment": 6,
+      "corruption": 5,
+      "technology": 3,
+      "social": 5,
+      "science": 3
+    }
   },
   {
     "name": "George Forsyth",
@@ -505,7 +736,18 @@
       "Justicia social",
       "Integración latinoamericana"
     ],
-    "symbol": "⭐"
+    "symbol": "⭐",
+    "scores": {
+      "education": 5,
+      "security": 4,
+      "economy": 5,
+      "health": 5,
+      "environment": 3,
+      "corruption": 4,
+      "technology": 3,
+      "social": 5,
+      "science": 3
+    }
   },
   {
     "name": "Rafael López Aliaga",
@@ -544,7 +786,18 @@
       "Economía social de mercado",
       "Reforma educativa"
     ],
-    "symbol": "🤝"
+    "symbol": "🤝",
+    "scores": {
+      "education": 4,
+      "security": 4,
+      "economy": 4,
+      "health": 4,
+      "environment": 4,
+      "corruption": 4,
+      "technology": 3,
+      "social": 5,
+      "science": 3
+    }
   },
   {
     "name": "Fiorella Molinelli",
@@ -558,7 +811,18 @@
       "Salud universal",
       "Transparencia fiscal"
     ],
-    "symbol": "🦅"
+    "symbol": "🦅",
+    "scores": {
+      "education": 5,
+      "security": 4,
+      "economy": 5,
+      "health": 6,
+      "environment": 4,
+      "corruption": 5,
+      "technology": 5,
+      "social": 5,
+      "science": 4
+    }
   },
   {
     "name": "Napoleón Becerra",
@@ -572,7 +836,18 @@
       "MYPE sin trabas",
       "Pensión digna"
     ],
-    "symbol": "⚒️"
+    "symbol": "⚒️",
+    "scores": {
+      "education": 4,
+      "security": 4,
+      "economy": 5,
+      "health": 4,
+      "environment": 3,
+      "corruption": 4,
+      "technology": 3,
+      "social": 6,
+      "science": 2
+    }
   },
   {
     "name": "Roberto Chiabra",
@@ -586,7 +861,18 @@
       "Orden interno",
       "Reforma militar y policial"
     ],
-    "symbol": "🇵🇪"
+    "symbol": "🇵🇪",
+    "scores": {
+      "education": 4,
+      "security": 7,
+      "economy": 4,
+      "health": 4,
+      "environment": 3,
+      "corruption": 5,
+      "technology": 4,
+      "social": 3,
+      "science": 3
+    }
   },
   {
     "name": "Mesías Guevara",
@@ -600,7 +886,18 @@
       "Reforma política",
       "Desarrollo sostenible"
     ],
-    "symbol": "💜"
+    "symbol": "💜",
+    "scores": {
+      "education": 5,
+      "security": 4,
+      "economy": 5,
+      "health": 5,
+      "environment": 5,
+      "corruption": 7,
+      "technology": 5,
+      "social": 5,
+      "science": 5
+    }
   },
   {
     "name": "Presidente IA",
