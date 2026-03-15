@@ -1,0 +1,56 @@
+{
+  "site": {
+    "title": "AI for President",
+    "tagline": "Gobernanza ideal impulsada por IA para un mundo justo y en paz"
+  },
+  "nav": {
+    "home": "Inicio",
+    "countries": "Países",
+    "about": "Acerca de",
+    "language": "Idioma"
+  },
+  "hero": {
+    "title": "¿Y si la IA gobernara para el pueblo?",
+    "subtitle": "Propuestas generadas por inteligencia artificial para construir sociedades justas, solidarias y en paz. Sin corrupción, sin intereses ocultos — solo datos, evidencia y bienestar humano.",
+    "cta": "Explorar países"
+  },
+  "countries": {
+    "title": "Países",
+    "featured": "Destacado",
+    "active": "Activo",
+    "coming_soon": "Próximamente",
+    "explore": "Explorar"
+  },
+  "banner": {
+    "detected": "Parece que estás en",
+    "cta": "Ver dashboard"
+  },
+  "peru": {
+    "title": "Presidente IA para Perú",
+    "subtitle": "Propuestas ideales y análisis electoral 2026",
+    "stats": "Estadísticas del País",
+    "proposals": "Propuestas del Presidente IA",
+    "candidates": "Comparación de Candidatos 2026",
+    "issues": "Problemas Clave",
+    "radar_title": "Comparación por Dimensiones",
+    "plan_analysis": "Análisis de Planes de Gobierno"
+  },
+  "dimensions": {
+    "education": "Educación",
+    "security": "Seguridad",
+    "economy": "Economía",
+    "health": "Salud",
+    "environment": "Medio Ambiente",
+    "corruption": "Anticorrupción",
+    "technology": "Tecnología",
+    "social": "Inclusión Social"
+  },
+  "slider": {
+    "title": "Un mundo que podemos construir juntos",
+    "subtitle": "Hitos alcanzables con gobernanza transparente basada en datos"
+  },
+  "footer": {
+    "text": "AI for President — Un proyecto open source por un mundo mejor",
+    "disclaimer": "Las propuestas son generadas por IA con fines educativos y de reflexión ciudadana."
+  }
+}

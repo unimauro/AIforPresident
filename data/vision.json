@@ -1,0 +1,90 @@
+[
+  {
+    "year": "2028",
+    "icon": "🌐",
+    "accent": "#58a6ff",
+    "title": "Internet como derecho universal",
+    "title_en": "Internet as a universal right",
+    "text": "Con gobernanza basada en datos, el 95% de la población mundial podría tener acceso a internet de banda ancha, cerrando la brecha digital entre países ricos y pobres.",
+    "text_en": "With data-driven governance, 95% of the world's population could have broadband internet access, closing the digital divide between rich and poor countries.",
+    "stat": "4.000M de personas conectadas",
+    "stat_en": "4B people connected"
+  },
+  {
+    "year": "2030",
+    "icon": "🍽️",
+    "accent": "#3fb950",
+    "title": "Hambre cero",
+    "title_en": "Zero hunger",
+    "text": "Optimización de cadenas alimentarias con IA, redistribución inteligente de excedentes y agricultura de precisión podrían eliminar el hambre mundial. Hoy se desperdicia un tercio de los alimentos producidos.",
+    "text_en": "AI-optimized food chains, smart surplus redistribution, and precision agriculture could eliminate world hunger. Today, one-third of food produced is wasted.",
+    "stat": "828M de personas sin hambre",
+    "stat_en": "828M people fed"
+  },
+  {
+    "year": "2032",
+    "icon": "🎓",
+    "accent": "#bc8cff",
+    "title": "Educación personalizada global",
+    "title_en": "Global personalized education",
+    "text": "Cada niño con un tutor IA personalizado en su idioma. Currículos adaptativos que respetan culturas locales mientras preparan ciudadanos globales. Sin barreras económicas.",
+    "text_en": "Every child with a personalized AI tutor in their language. Adaptive curricula respecting local cultures while preparing global citizens. No economic barriers.",
+    "stat": "260M de niños reintegrados",
+    "stat_en": "260M children back in school"
+  },
+  {
+    "year": "2033",
+    "icon": "⚖️",
+    "accent": "#d29922",
+    "title": "Justicia transparente",
+    "title_en": "Transparent justice",
+    "text": "Sistemas judiciales asistidos por IA que eliminan sesgos, reducen tiempos de proceso en 80% y hacen que cada decisión pública sea auditable por los ciudadanos en tiempo real.",
+    "text_en": "AI-assisted judicial systems eliminating bias, reducing processing times by 80%, and making every public decision auditable by citizens in real time.",
+    "stat": "0% impunidad en delitos públicos",
+    "stat_en": "0% impunity in public crimes"
+  },
+  {
+    "year": "2035",
+    "icon": "🌿",
+    "accent": "#3fb950",
+    "title": "Energía 100% limpia",
+    "title_en": "100% clean energy",
+    "text": "Planificación energética optimizada por IA, redes inteligentes y almacenamiento distribuido podrían lograr que el 100% de la electricidad mundial sea renovable.",
+    "text_en": "AI-optimized energy planning, smart grids, and distributed storage could achieve 100% renewable global electricity.",
+    "stat": "0 emisiones del sector eléctrico",
+    "stat_en": "0 emissions from power sector"
+  },
+  {
+    "year": "2036",
+    "icon": "🏥",
+    "accent": "#f85149",
+    "title": "Salud preventiva universal",
+    "title_en": "Universal preventive healthcare",
+    "text": "IA diagnosticando enfermedades antes de que aparezcan síntomas. Telemedicina accesible en cada rincón. Genómica personalizada para tratamientos a medida. Esperanza de vida global: 80+ años.",
+    "text_en": "AI diagnosing diseases before symptoms appear. Telemedicine accessible everywhere. Personalized genomics for tailored treatments. Global life expectancy: 80+ years.",
+    "stat": "Esperanza de vida: 80+ años global",
+    "stat_en": "Life expectancy: 80+ years globally"
+  },
+  {
+    "year": "2038",
+    "icon": "🕊️",
+    "accent": "#58a6ff",
+    "title": "Diplomacia basada en datos",
+    "title_en": "Data-driven diplomacy",
+    "text": "Conflictos prevenidos mediante análisis predictivo. Negociaciones asistidas por IA que encuentran soluciones donde todos ganan. Reducción del 90% en conflictos armados.",
+    "text_en": "Conflicts prevented through predictive analysis. AI-assisted negotiations finding win-win solutions. 90% reduction in armed conflicts.",
+    "stat": "90% menos conflictos armados",
+    "stat_en": "90% fewer armed conflicts"
+  },
+  {
+    "year": "2040",
+    "icon": "🌍",
+    "accent": "#bc8cff",
+    "title": "Desigualdad erradicada",
+    "title_en": "Inequality eradicated",
+    "text": "Con redistribución inteligente, economías circulares y oportunidades equitativas, el coeficiente Gini global podría caer por debajo de 0.25. Un mundo donde nacer pobre no determine tu futuro.",
+    "text_en": "With smart redistribution, circular economies, and equitable opportunities, the global Gini coefficient could fall below 0.25. A world where being born poor doesn't determine your future.",
+    "stat": "Gini global < 0.25",
+    "stat_en": "Global Gini < 0.25"
+  }
+]

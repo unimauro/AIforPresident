@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Keiko Fujimori",
+    "party": "Fuerza Popular",
+    "color": "#FF6B35",
+    "key_proposals": ["Mano dura contra la inseguridad", "Reactivación económica", "Programas sociales focalizados"],
+    "scores": { "education": 5, "security": 7, "economy": 7, "health": 5, "environment": 3, "corruption": 3, "technology": 4, "social": 5 }
+  },
+  {
+    "name": "Fernando Olivera",
+    "party": "FIM",
+    "color": "#4ECDC4",
+    "key_proposals": ["Reforma del sistema judicial", "Descentralización", "Lucha anticorrupción"],
+    "scores": { "education": 5, "security": 5, "economy": 5, "health": 4, "environment": 4, "corruption": 6, "technology": 3, "social": 5 }
+  },
+  {
+    "name": "Hernando de Soto",
+    "party": "Avanza País",
+    "color": "#45B7D1",
+    "key_proposals": ["Formalización de la economía", "Derechos de propiedad", "Libre mercado"],
+    "scores": { "education": 5, "security": 4, "economy": 8, "health": 4, "environment": 3, "corruption": 5, "technology": 6, "social": 4 }
+  },
+  {
+    "name": "Carlos Añaños",
+    "party": "País Para Todos",
+    "color": "#96CEB4",
+    "key_proposals": ["Inversión privada responsable", "Emprendimiento", "Educación técnica"],
+    "scores": { "education": 6, "security": 4, "economy": 7, "health": 5, "environment": 5, "corruption": 5, "technology": 6, "social": 5 }
+  },
+  {
+    "name": "Presidente IA",
+    "party": "AI for President",
+    "color": "#58a6ff",
+    "key_proposals": ["Transparencia total con blockchain", "Educación digital universal", "Gobierno 100% digital", "Salud con IA"],
+    "scores": { "education": 9, "security": 8, "economy": 8, "health": 9, "environment": 9, "corruption": 10, "technology": 10, "social": 9 }
+  }
+]

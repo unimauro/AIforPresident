@@ -1,0 +1,56 @@
+{
+  "site": {
+    "title": "AI for President",
+    "tagline": "AI-powered ideal governance for a just and peaceful world"
+  },
+  "nav": {
+    "home": "Home",
+    "countries": "Countries",
+    "about": "About",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "What if AI governed for the people?",
+    "subtitle": "AI-generated proposals to build just, supportive, and peaceful societies. No corruption, no hidden interests — just data, evidence, and human well-being.",
+    "cta": "Explore countries"
+  },
+  "countries": {
+    "title": "Countries",
+    "featured": "Featured",
+    "active": "Active",
+    "coming_soon": "Coming Soon",
+    "explore": "Explore"
+  },
+  "banner": {
+    "detected": "It looks like you're from",
+    "cta": "View dashboard"
+  },
+  "peru": {
+    "title": "AI President for Peru",
+    "subtitle": "Ideal proposals and 2026 election analysis",
+    "stats": "Country Statistics",
+    "proposals": "AI President Proposals",
+    "candidates": "2026 Candidate Comparison",
+    "issues": "Key Issues",
+    "radar_title": "Comparison by Dimensions",
+    "plan_analysis": "Government Plan Analysis"
+  },
+  "dimensions": {
+    "education": "Education",
+    "security": "Security",
+    "economy": "Economy",
+    "health": "Health",
+    "environment": "Environment",
+    "corruption": "Anti-corruption",
+    "technology": "Technology",
+    "social": "Social Inclusion"
+  },
+  "slider": {
+    "title": "A world we could build together",
+    "subtitle": "Milestones achievable with transparent, data-driven governance"
+  },
+  "footer": {
+    "text": "AI for President — An open source project for a better world",
+    "disclaimer": "Proposals are AI-generated for educational and civic reflection purposes."
+  }
+}

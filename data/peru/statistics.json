@@ -1,0 +1,10 @@
+{
+  "population": { "value": 34352719, "label": "Población", "label_en": "Population", "year": 2025, "source": "INEI", "format": "number" },
+  "gdp_per_capita": { "value": 7772, "label": "PIB per cápita", "label_en": "GDP per capita", "year": 2024, "source": "Banco Mundial", "format": "currency", "prefix": "$" },
+  "poverty_rate": { "value": 27.5, "label": "Pobreza", "label_en": "Poverty Rate", "year": 2024, "source": "INEI", "format": "percent" },
+  "gini_index": { "value": 0.41, "label": "Índice Gini", "label_en": "Gini Index", "year": 2023, "source": "Banco Mundial", "format": "decimal" },
+  "unemployment": { "value": 6.2, "label": "Desempleo", "label_en": "Unemployment", "year": 2025, "source": "INEI", "format": "percent" },
+  "literacy_rate": { "value": 94.4, "label": "Alfabetización", "label_en": "Literacy Rate", "year": 2023, "source": "UNESCO", "format": "percent" },
+  "life_expectancy": { "value": 76.5, "label": "Esperanza de vida", "label_en": "Life Expectancy", "year": 2024, "source": "OMS", "format": "years" },
+  "internet_access": { "value": 71.1, "label": "Acceso a Internet", "label_en": "Internet Access", "year": 2024, "source": "INEI", "format": "percent" }
+}
