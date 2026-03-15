@@ -138,9 +138,14 @@ const Dashboard = {
     `).join('');
   },
 
+  radarChart: null,
+  barChart: null,
+
   renderRadarChart(candidates) {
     const canvas = document.getElementById('radar-chart');
     if (!canvas) return;
+
+    if (this.radarChart) this.radarChart.destroy();
 
     const dims = ['education', 'security', 'economy', 'health', 'environment', 'corruption', 'technology', 'social'];
     const labels = dims.map(d => I18n.t(`dimensions.${d}`));
@@ -154,7 +159,7 @@ const Dashboard = {
       borderWidth: 2
     }));
 
-    new Chart(canvas, {
+    this.radarChart = new Chart(canvas, {
       type: 'radar',
       data: { labels, datasets },
       options: {
@@ -183,6 +188,8 @@ const Dashboard = {
     const canvas = document.getElementById('bar-chart');
     if (!canvas) return;
 
+    if (this.barChart) this.barChart.destroy();
+
     const dims = ['education', 'security', 'economy', 'health', 'environment', 'corruption', 'technology', 'social'];
 
     const datasets = candidates.map(c => ({
@@ -193,7 +200,7 @@ const Dashboard = {
       borderWidth: 1
     }));
 
-    new Chart(canvas, {
+    this.barChart = new Chart(canvas, {
       type: 'bar',
       data: {
         labels: dims.map(d => I18n.t(`dimensions.${d}`)),
