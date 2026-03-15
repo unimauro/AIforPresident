@@ -8,11 +8,12 @@ const PDFGenerator = {
     const contentWidth = pageWidth - margin * 2;
     let y = 20;
 
-    // Load data
+    // Load data from current dashboard path
+    const base = Dashboard.basePath;
     const [proposals, stats, candidates, issues] = await Promise.all([
-      fetch('../data/peru/proposals.json').then(r => r.json()),
-      fetch('../data/peru/statistics.json').then(r => r.json()),
-      fetch('../data/peru/candidates.json').then(r => r.json()),
+      fetch(`${base}proposals.json`).then(r => r.json()),
+      fetch(`${base}statistics.json`).then(r => r.json()),
+      fetch(`${base}candidates.json`).then(r => r.json()).catch(() => []),
       fetch('../data/peru/issues.json').then(r => r.json())
     ]);
 
@@ -35,9 +36,12 @@ const PDFGenerator = {
     doc.setFont('helvetica', 'bold');
     doc.text('AI for President', pageWidth / 2, 60, { align: 'center' });
 
+    const countryInfo = Dashboard.countryInfo[Dashboard.countryCode] || Dashboard.countryInfo.PE;
+    const countryName = isEn ? countryInfo.name_en : countryInfo.name;
+
     doc.setFontSize(24);
     doc.setTextColor(...white);
-    doc.text(isEn ? 'Peru' : 'Perú', pageWidth / 2, 80, { align: 'center' });
+    doc.text(countryName, pageWidth / 2, 80, { align: 'center' });
 
     // Subtitle
     doc.setFontSize(14);
@@ -275,12 +279,13 @@ const PDFGenerator = {
       doc.setPage(i);
       doc.setFontSize(7);
       doc.setTextColor(...gray);
-      doc.text(`AI for President — ${isEn ? 'Peru' : 'Perú'}`, margin, 290);
+      doc.text(`AI for President — ${countryName}`, margin, 290);
       doc.text(`${i}/${totalPages}`, pageWidth - margin, 290, { align: 'right' });
     }
 
     // Save
-    const filename = isEn ? 'AI-President-Peru-Proposals.pdf' : 'Presidente-IA-Peru-Propuestas.pdf';
+    const safeName = countryName.replace(/\s+/g, '-');
+    const filename = isEn ? `AI-President-${safeName}-Proposals.pdf` : `Presidente-IA-${safeName}-Propuestas.pdf`;
     doc.save(filename);
   },
 

@@ -1,21 +1,81 @@
 const Dashboard = {
   basePath: '../data/peru/',
+  countryCode: 'PE',
+
+  detectCountry() {
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('c') || 'PE';
+    this.countryCode = code.toUpperCase();
+    this.basePath = `../data/${this.getCountryFolder()}/`;
+  },
+
+  countryInfo: {
+    PE: { flag: '🇵🇪', name: 'Perú', name_en: 'Peru' },
+    AR: { flag: '🇦🇷', name: 'Argentina', name_en: 'Argentina' },
+    MX: { flag: '🇲🇽', name: 'México', name_en: 'Mexico' },
+    CO: { flag: '🇨🇴', name: 'Colombia', name_en: 'Colombia' },
+    CL: { flag: '🇨🇱', name: 'Chile', name_en: 'Chile' },
+    BR: { flag: '🇧🇷', name: 'Brasil', name_en: 'Brazil' },
+    US: { flag: '🇺🇸', name: 'Estados Unidos', name_en: 'United States' },
+    ES: { flag: '🇪🇸', name: 'España', name_en: 'Spain' },
+    FR: { flag: '🇫🇷', name: 'Francia', name_en: 'France' },
+    DE: { flag: '🇩🇪', name: 'Alemania', name_en: 'Germany' },
+    JP: { flag: '🇯🇵', name: 'Japón', name_en: 'Japan' },
+    KR: { flag: '🇰🇷', name: 'Corea del Sur', name_en: 'South Korea' },
+    IN: { flag: '🇮🇳', name: 'India', name_en: 'India' },
+    NG: { flag: '🇳🇬', name: 'Nigeria', name_en: 'Nigeria' },
+    AU: { flag: '🇦🇺', name: 'Australia', name_en: 'Australia' }
+  },
+
+  updateHeroTitle() {
+    const info = this.countryInfo[this.countryCode] || this.countryInfo.PE;
+    const isEn = I18n.locale === 'en';
+    const name = isEn ? info.name_en : info.name;
+    const title = document.getElementById('country-hero-title');
+    const subtitle = document.getElementById('country-hero-subtitle');
+    if (title) title.textContent = `${info.flag} ${isEn ? 'AI President for' : 'Presidente IA para'} ${name}`;
+    if (subtitle) subtitle.textContent = isEn ? `Ideal proposals and analysis for ${name}` : `Propuestas ideales y análisis para ${name}`;
+    document.title = `AI President — ${name} ${info.flag}`;
+  },
+
+  getCountryFolder() {
+    const map = {
+      PE: 'peru', AR: 'argentina', MX: 'mexico', CO: 'colombia',
+      CL: 'chile', BR: 'brazil', US: 'usa', ES: 'spain',
+      FR: 'france', DE: 'germany', JP: 'japan', KR: 'south-korea',
+      IN: 'india', NG: 'nigeria', AU: 'australia'
+    };
+    return map[this.countryCode] || 'peru';
+  },
 
   async init() {
+    this.detectCountry();
+
     const [stats, proposals, candidates, issues] = await Promise.all([
       this.fetchJSON('statistics.json'),
       this.fetchJSON('proposals.json'),
-      this.fetchJSON('candidates.json'),
+      this.fetchJSON('candidates.json').catch(() => []),
       this.fetchJSON('issues.json')
     ]);
 
+    this.updateHeroTitle();
+
     this.renderStats(stats);
     this.renderProposals(proposals);
-    this.renderCandidates(candidates);
-    this.renderRadarChart(candidates);
-    this.renderBarChart(candidates);
+
+    // Show candidate sections only if data exists
+    if (candidates && candidates.length > 0) {
+      const candSection = document.getElementById('candidates');
+      const compSection = document.getElementById('comparison-section');
+      if (candSection) candSection.style.display = '';
+      if (compSection) compSection.style.display = '';
+      this.renderCandidates(candidates);
+      this.renderRadarChart(candidates);
+      this.renderBarChart(candidates);
+      this.renderComparisonTable(candidates);
+    }
+
     this.renderIssues(issues);
-    this.renderComparisonTable(candidates);
   },
 
   async fetchJSON(file) {

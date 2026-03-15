@@ -1,0 +1,10 @@
+{
+  "population": { "value": 48059777, "label": "Poblacion", "label_en": "Population", "year": 2025, "source": "INE", "format": "number" },
+  "gdp_per_capita": { "value": 31000, "label": "PIB per capita", "label_en": "GDP per capita", "year": 2024, "source": "Banco Mundial", "format": "currency", "prefix": "$" },
+  "poverty_rate": { "value": 20.4, "label": "Pobreza", "label_en": "Poverty Rate", "year": 2024, "source": "INE", "format": "percent" },
+  "unemployment": { "value": 11.5, "label": "Desempleo", "label_en": "Unemployment", "year": 2025, "source": "INE", "format": "percent" },
+  "literacy_rate": { "value": 98.6, "label": "Alfabetizacion", "label_en": "Literacy Rate", "year": 2023, "source": "UNESCO", "format": "percent" },
+  "life_expectancy": { "value": 83.5, "label": "Esperanza de vida", "label_en": "Life Expectancy", "year": 2024, "source": "OMS", "format": "years" },
+  "gini_index": { "value": 0.33, "label": "Indice Gini", "label_en": "Gini Index", "year": 2023, "source": "Eurostat", "format": "decimal" },
+  "youth_unemployment": { "value": 28.0, "label": "Desempleo juvenil", "label_en": "Youth Unemployment", "year": 2025, "source": "INE", "format": "percent" }
+}

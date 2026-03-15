@@ -1,0 +1,10 @@
+{
+  "population": { "value": 52085168, "label": "Poblacion", "label_en": "Population", "year": 2025, "source": "DANE", "format": "number" },
+  "gdp_per_capita": { "value": 6800, "label": "PIB per capita", "label_en": "GDP per capita", "year": 2024, "source": "Banco Mundial", "format": "currency", "prefix": "$" },
+  "poverty_rate": { "value": 33.0, "label": "Pobreza", "label_en": "Poverty Rate", "year": 2024, "source": "DANE", "format": "percent" },
+  "unemployment": { "value": 10.0, "label": "Desempleo", "label_en": "Unemployment", "year": 2025, "source": "DANE", "format": "percent" },
+  "literacy_rate": { "value": 95.6, "label": "Alfabetizacion", "label_en": "Literacy Rate", "year": 2023, "source": "UNESCO", "format": "percent" },
+  "life_expectancy": { "value": 77.0, "label": "Esperanza de vida", "label_en": "Life Expectancy", "year": 2024, "source": "OMS", "format": "years" },
+  "gini_index": { "value": 0.51, "label": "Indice Gini", "label_en": "Gini Index", "year": 2023, "source": "Banco Mundial", "format": "decimal" },
+  "displaced_persons": { "value": 8400000, "label": "Desplazados internos", "label_en": "Internally Displaced", "year": 2024, "source": "ACNUR", "format": "number" }
+}

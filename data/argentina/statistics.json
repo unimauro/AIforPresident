@@ -1,0 +1,10 @@
+{
+  "population": { "value": 46654581, "label": "Población", "label_en": "Population", "year": 2025, "source": "INDEC", "format": "number" },
+  "gdp_per_capita": { "value": 13650, "label": "PIB per cápita", "label_en": "GDP per capita", "year": 2024, "source": "Banco Mundial", "format": "currency", "prefix": "$" },
+  "poverty_rate": { "value": 41.7, "label": "Pobreza", "label_en": "Poverty Rate", "year": 2024, "source": "INDEC", "format": "percent" },
+  "inflation": { "value": 65.0, "label": "Inflación anual", "label_en": "Annual Inflation", "year": 2025, "source": "INDEC", "format": "percent" },
+  "unemployment": { "value": 6.4, "label": "Desempleo", "label_en": "Unemployment", "year": 2025, "source": "INDEC", "format": "percent" },
+  "literacy_rate": { "value": 99.0, "label": "Alfabetización", "label_en": "Literacy Rate", "year": 2023, "source": "UNESCO", "format": "percent" },
+  "life_expectancy": { "value": 77.1, "label": "Esperanza de vida", "label_en": "Life Expectancy", "year": 2024, "source": "OMS", "format": "years" },
+  "gini_index": { "value": 0.42, "label": "Índice Gini", "label_en": "Gini Index", "year": 2023, "source": "Banco Mundial", "format": "decimal" }
+}

@@ -1,0 +1,10 @@
+{
+  "population": { "value": 216422446, "label": "Populacao", "label_en": "Population", "year": 2025, "source": "IBGE", "format": "number" },
+  "gdp_per_capita": { "value": 9500, "label": "PIB per capita", "label_en": "GDP per capita", "year": 2024, "source": "Banco Mundial", "format": "currency", "prefix": "$" },
+  "poverty_rate": { "value": 31.0, "label": "Pobreza", "label_en": "Poverty Rate", "year": 2024, "source": "IBGE", "format": "percent" },
+  "unemployment": { "value": 7.8, "label": "Desemprego", "label_en": "Unemployment", "year": 2025, "source": "IBGE", "format": "percent" },
+  "literacy_rate": { "value": 93.2, "label": "Alfabetizacao", "label_en": "Literacy Rate", "year": 2023, "source": "UNESCO", "format": "percent" },
+  "life_expectancy": { "value": 76.0, "label": "Expectativa de vida", "label_en": "Life Expectancy", "year": 2024, "source": "OMS", "format": "years" },
+  "gini_index": { "value": 0.48, "label": "Indice Gini", "label_en": "Gini Index", "year": 2023, "source": "Banco Mundial", "format": "decimal" },
+  "homicide_rate": { "value": 22.4, "label": "Taxa de homicidios (por 100k)", "label_en": "Homicide Rate (per 100k)", "year": 2024, "source": "IPEA", "format": "number" }
+}
