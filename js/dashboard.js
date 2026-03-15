@@ -51,21 +51,26 @@ const Dashboard = {
   async init() {
     this.detectCountry();
 
-    const [stats, proposals, candidates, issues] = await Promise.all([
-      this.fetchJSON('statistics.json'),
-      this.fetchJSON('proposals.json'),
-      this.fetchJSON('candidates.json').catch(() => []),
-      this.fetchJSON('issues.json'),
-      this.fetchJSON('polls.json').catch(() => null)
-    ]);
+    let stats, proposals, candidates, issues;
+    try {
+      [stats, proposals, candidates, issues] = await Promise.all([
+        this.fetchJSON('statistics.json').catch(() => ({})),
+        this.fetchJSON('proposals.json').catch(() => []),
+        this.fetchJSON('candidates.json').catch(() => []),
+        this.fetchJSON('issues.json').catch(() => [])
+      ]);
+    } catch (e) {
+      console.error('Error loading data:', e);
+      return;
+    }
 
     this.updateHeroTitle();
 
     this.renderStats(stats);
     this.renderProposals(proposals);
 
-    // Comparison charts (radar, bar, table) - always render if any candidate has scores
-    const scoredCandidates = candidates.filter(c => c.scores);
+    // Comparison charts (radar, bar, table)
+    const scoredCandidates = (candidates || []).filter(c => c.scores);
     if (scoredCandidates.length > 0) {
       this.renderRadarChart(scoredCandidates);
       this.renderBarChart(scoredCandidates);
@@ -88,7 +93,7 @@ const Dashboard = {
       }
     }
 
-    this.renderIssues(issues);
+    this.renderIssues(issues || []);
   },
 
   async fetchJSON(file) {
