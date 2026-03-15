@@ -1,10 +1,74 @@
 [
-  { "category": "economy", "icon": "💰", "title": "Estabilidad Económica Real", "title_en": "Real Economic Stability", "description": "Plan integral antiinflacionario con independencia del Banco Central. Moneda digital nacional respaldada por reservas reales. Eliminación gradual de controles cambiarios con transición ordenada.", "description_en": "Comprehensive anti-inflation plan with central bank independence. National digital currency backed by real reserves. Gradual elimination of exchange controls with orderly transition." },
-  { "category": "education", "icon": "📚", "title": "Educación de Excelencia", "title_en": "Excellence in Education", "description": "Jornada escolar extendida en todo el país. Laboratorios de tecnología en cada escuela pública. Programa de becas para retener talento argentino y repatriar científicos.", "description_en": "Extended school day nationwide. Technology labs in every public school. Scholarship program to retain Argentine talent and repatriate scientists." },
-  { "category": "technology", "icon": "🚀", "title": "Argentina Hub Tech", "title_en": "Argentina Tech Hub", "description": "Convertir Argentina en el hub tecnológico de Latinoamérica. Zona franca digital con incentivos para startups. Formación masiva en IA, blockchain y ciberseguridad.", "description_en": "Transform Argentina into Latin America's tech hub. Digital free zone with startup incentives. Massive training in AI, blockchain, and cybersecurity." },
-  { "category": "health", "icon": "🏥", "title": "Salud Federal Integrada", "title_en": "Integrated Federal Healthcare", "description": "Sistema único de salud que integre hospitales públicos, obras sociales y prepagas. Historia clínica digital universal. Telemedicina para zonas rurales de la Patagonia y el NOA.", "description_en": "Unified health system integrating public hospitals, unions, and private care. Universal digital health records. Telemedicine for rural Patagonia and NOA regions." },
-  { "category": "corruption", "icon": "⚖️", "title": "Transparencia Federal", "title_en": "Federal Transparency", "description": "Presupuesto abierto en tiempo real para los 3 niveles de gobierno. IA para auditar contrataciones públicas. Reforma judicial con jueces evaluados por desempeño.", "description_en": "Real-time open budget for all 3 government levels. AI for auditing public procurement. Judicial reform with performance-evaluated judges." },
-  { "category": "environment", "icon": "🌿", "title": "Transición Energética Patagónica", "title_en": "Patagonian Energy Transition", "description": "Aprovechar el viento patagónico y el litio del NOA para liderar la transición energética regional. Argentina exportadora neta de energía limpia para 2035.", "description_en": "Leverage Patagonian wind and NOA lithium to lead regional energy transition. Argentina as net clean energy exporter by 2035." },
-  { "category": "social", "icon": "🤝", "title": "Reducción de la Brecha", "title_en": "Bridging the Gap", "description": "Plan de urbanización de villas con servicios completos. Ingreso universal para la primera infancia. Programa federal de empleo joven con formación técnica.", "description_en": "Villa urbanization plan with full services. Universal income for early childhood. Federal youth employment program with technical training." },
-  { "category": "security", "icon": "🛡️", "title": "Seguridad Inteligente Federal", "title_en": "Federal Smart Security", "description": "Sistema federal integrado de seguridad con análisis predictivo. Reforma policial con formación universitaria obligatoria. Lucha contra el narcotráfico con cooperación regional.", "description_en": "Integrated federal security system with predictive analytics. Police reform with mandatory university training. Fight against drug trafficking with regional cooperation." }
+  {
+    "category": "economy",
+    "icon": "💰",
+    "title": "Estabilidad Económica Real",
+    "title_en": "Real Economic Stability",
+    "description": "Plan integral antiinflacionario con independencia del Banco Central. Moneda digital nacional respaldada por reservas reales. Eliminación gradual de controles cambiarios con transición ordenada.",
+    "description_en": "Comprehensive anti-inflation plan with central bank independence. National digital currency backed by real reserves. Gradual elimination of exchange controls with orderly transition."
+  },
+  {
+    "category": "education",
+    "icon": "📚",
+    "title": "Educación de Excelencia",
+    "title_en": "Excellence in Education",
+    "description": "Jornada escolar extendida en todo el país. Laboratorios de tecnología en cada escuela pública. Programa de becas para retener talento argentino y repatriar científicos.",
+    "description_en": "Extended school day nationwide. Technology labs in every public school. Scholarship program to retain Argentine talent and repatriate scientists."
+  },
+  {
+    "category": "technology",
+    "icon": "🚀",
+    "title": "Argentina Hub Tech",
+    "title_en": "Argentina Tech Hub",
+    "description": "Convertir Argentina en el hub tecnológico de Latinoamérica. Zona franca digital con incentivos para startups. Formación masiva en IA, blockchain y ciberseguridad.",
+    "description_en": "Transform Argentina into Latin America's tech hub. Digital free zone with startup incentives. Massive training in AI, blockchain, and cybersecurity."
+  },
+  {
+    "category": "health",
+    "icon": "🏥",
+    "title": "Salud Federal Integrada",
+    "title_en": "Integrated Federal Healthcare",
+    "description": "Sistema único de salud que integre hospitales públicos, obras sociales y prepagas. Historia clínica digital universal. Telemedicina para zonas rurales de la Patagonia y el NOA.",
+    "description_en": "Unified health system integrating public hospitals, unions, and private care. Universal digital health records. Telemedicine for rural Patagonia and NOA regions."
+  },
+  {
+    "category": "corruption",
+    "icon": "⚖️",
+    "title": "Transparencia Federal",
+    "title_en": "Federal Transparency",
+    "description": "Presupuesto abierto en tiempo real para los 3 niveles de gobierno. IA para auditar contrataciones públicas. Reforma judicial con jueces evaluados por desempeño.",
+    "description_en": "Real-time open budget for all 3 government levels. AI for auditing public procurement. Judicial reform with performance-evaluated judges."
+  },
+  {
+    "category": "environment",
+    "icon": "🌿",
+    "title": "Transición Energética Patagónica",
+    "title_en": "Patagonian Energy Transition",
+    "description": "Aprovechar el viento patagónico y el litio del NOA para liderar la transición energética regional. Argentina exportadora neta de energía limpia para 2035.",
+    "description_en": "Leverage Patagonian wind and NOA lithium to lead regional energy transition. Argentina as net clean energy exporter by 2035."
+  },
+  {
+    "category": "social",
+    "icon": "🤝",
+    "title": "Reducción de la Brecha",
+    "title_en": "Bridging the Gap",
+    "description": "Plan de urbanización de villas con servicios completos. Ingreso universal para la primera infancia. Programa federal de empleo joven con formación técnica.",
+    "description_en": "Villa urbanization plan with full services. Universal income for early childhood. Federal youth employment program with technical training."
+  },
+  {
+    "category": "security",
+    "icon": "🛡️",
+    "title": "Seguridad Inteligente Federal",
+    "title_en": "Federal Smart Security",
+    "description": "Sistema federal integrado de seguridad con análisis predictivo. Reforma policial con formación universitaria obligatoria. Lucha contra el narcotráfico con cooperación regional.",
+    "description_en": "Integrated federal security system with predictive analytics. Police reform with mandatory university training. Fight against drug trafficking with regional cooperation."
+  },
+  {
+    "category": "science",
+    "icon": "🔬",
+    "title": "Soberanía Científica Argentina",
+    "title_en": "Argentine Scientific Sovereignty",
+    "description": "Potenciar CONAE y CNEA: satélites SAOCOM avanzados, reactor CAREM operativo y producción de radioisótopos para toda Latinoamérica. Centro de computación cuántica en Bariloche. Elevar inversión en I+D al 3% del PIB. Programa de retorno para los 10,000+ científicos argentinos en el exterior.",
+    "description_en": "Boost CONAE and CNEA: advanced SAOCOM satellites, operational CAREM reactor and radioisotope production for all Latin America. Quantum computing center in Bariloche. Raise R&D investment to 3% of GDP. Return program for 10,000+ Argentine scientists abroad."
+  }
 ]

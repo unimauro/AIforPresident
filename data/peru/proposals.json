@@ -62,5 +62,13 @@
     "title_en": "Inclusion Without Borders",
     "description": "Programa nacional contra la desigualdad con ingreso básico para familias vulnerables. Igualdad de oportunidades real: cuotas de género, inclusión de personas con discapacidad y pueblos originarios en la toma de decisiones.",
     "description_en": "National program against inequality with basic income for vulnerable families. Real equal opportunity: gender quotas, inclusion of people with disabilities and indigenous peoples in decision-making."
+  },
+  {
+    "category": "science",
+    "icon": "🔬",
+    "title": "Soberanía Científica y Tecnológica",
+    "title_en": "Scientific & Technological Sovereignty",
+    "description": "Elevar inversión en I+D del 0.13% al 3% del PIB. Programa nuclear pacífico: reactores para energía limpia, medicina nuclear y desalinización de agua. Programa espacial con satélites propios para telecomunicaciones y agricultura de precisión. Centro nacional de computación cuántica. Agencia espacial latinoamericana en colaboración regional. Becas de retorno para científicos peruanos en el exterior.",
+    "description_en": "Raise R&D investment from 0.13% to 3% of GDP. Peaceful nuclear program: reactors for clean energy, nuclear medicine, and water desalination. Space program with own satellites for telecommunications and precision agriculture. National quantum computing center. Latin American space agency in regional collaboration. Return scholarships for Peruvian scientists abroad."
   }
 ]

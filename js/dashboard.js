@@ -147,7 +147,7 @@ const Dashboard = {
 
     if (this.radarChart) this.radarChart.destroy();
 
-    const dims = ['education', 'security', 'economy', 'health', 'environment', 'corruption', 'technology', 'social'];
+    const dims = ['education', 'security', 'economy', 'health', 'environment', 'corruption', 'technology', 'social', 'science'];
     const labels = dims.map(d => I18n.t(`dimensions.${d}`));
 
     const datasets = candidates.map(c => ({
@@ -190,7 +190,7 @@ const Dashboard = {
 
     if (this.barChart) this.barChart.destroy();
 
-    const dims = ['education', 'security', 'economy', 'health', 'environment', 'corruption', 'technology', 'social'];
+    const dims = ['education', 'security', 'economy', 'health', 'environment', 'corruption', 'technology', 'social', 'science'];
 
     const datasets = candidates.map(c => ({
       label: c.name,
@@ -249,7 +249,7 @@ const Dashboard = {
     const wrapper = document.getElementById('comparison-table');
     if (!wrapper) return;
 
-    const dims = ['education', 'security', 'economy', 'health', 'environment', 'corruption', 'technology', 'social'];
+    const dims = ['education', 'security', 'economy', 'health', 'environment', 'corruption', 'technology', 'social', 'science'];
 
     const headerCells = candidates.map(c =>
       `<th style="color:${c.color}">${c.name}</th>`

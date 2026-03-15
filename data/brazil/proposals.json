@@ -1,10 +1,74 @@
 [
-  { "category": "environment", "icon": "🌳", "title": "Protecao da Amazonia com IA", "title_en": "Amazon Protection with AI", "description": "Sistema de monitoramento por satelite e IA para detectar desmatamento em tempo real. Guardas florestais com drones autonomos. Economia da floresta em pe com bioeconomia e creditos de carbono.", "description_en": "Satellite and AI monitoring system to detect deforestation in real time. Forest rangers with autonomous drones. Standing forest economy with bioeconomy and carbon credits." },
-  { "category": "education", "icon": "📚", "title": "Educacao Digital Universal", "title_en": "Universal Digital Education", "description": "Tablet e internet para cada estudante da rede publica. Plataforma nacional de ensino adaptativo com IA. Valorizacao do professor com salario de carreira de Estado.", "description_en": "Tablet and internet for every public school student. National adaptive learning platform with AI. Teacher appreciation with state career salary." },
-  { "category": "health", "icon": "🏥", "title": "Reforma do SUS Inteligente", "title_en": "Smart SUS Healthcare Reform", "description": "Modernizacao do Sistema Unico de Saude com prontuario eletronico universal. Telemedicina para comunidades ribeirinhas e quilombolas. IA para triagem e diagnostico em postos de saude.", "description_en": "Modernization of the Unified Health System with universal electronic health records. Telemedicine for riverside and quilombola communities. AI for triage and diagnosis in health posts." },
-  { "category": "security", "icon": "🛡️", "title": "Seguranca Inteligente e Humana", "title_en": "Smart and Humane Security", "description": "Policiamento preditivo com respeito aos direitos humanos. Reforma do sistema prisional com foco em reintegracao. Combate ao trafico de armas com rastreamento tecnologico.", "description_en": "Predictive policing with respect for human rights. Prison system reform focused on reintegration. Combating arms trafficking with technological tracking." },
-  { "category": "corruption", "icon": "⚖️", "title": "Anticorrupcao Blockchain", "title_en": "Anti-Corruption Blockchain", "description": "Todas as licitacoes e contratos publicos registrados em blockchain. Transparencia total do orcamento em tempo real. Fortalecimento da CGU e do Ministerio Publico com tecnologia.", "description_en": "All public bids and contracts recorded on blockchain. Full real-time budget transparency. Strengthening CGU and Public Ministry with technology." },
-  { "category": "economy", "icon": "🏭", "title": "Industrializacao Verde", "title_en": "Green Industrialization", "description": "Reindustrializacao do Brasil com foco em tecnologia limpa. Hidrogenio verde e energia solar como motores de exportacao. Incentivos fiscais para fabricas com emissao zero.", "description_en": "Brazil's reindustrialization focused on clean technology. Green hydrogen and solar energy as export drivers. Tax incentives for zero-emission factories." },
-  { "category": "social", "icon": "✊", "title": "Equidade Racial", "title_en": "Racial Equity", "description": "Combate ao racismo estrutural com politicas afirmativas ampliadas. Reparacao historica para comunidades quilombolas. Programa de empreendedorismo negro com acesso a credito e mentoria.", "description_en": "Fighting structural racism with expanded affirmative policies. Historical reparation for quilombola communities. Black entrepreneurship program with credit access and mentoring." },
-  { "category": "technology", "icon": "🚀", "title": "Soberania Tecnologica", "title_en": "Tech Sovereignty", "description": "Desenvolvimento de IA brasileira com dados soberanos. Semicondutores nacionais e infraestrutura de cloud local. Formacao de 1 milhao de programadores em 5 anos.", "description_en": "Development of Brazilian AI with sovereign data. National semiconductors and local cloud infrastructure. Training 1 million programmers in 5 years." }
+  {
+    "category": "environment",
+    "icon": "🌳",
+    "title": "Protecao da Amazonia com IA",
+    "title_en": "Amazon Protection with AI",
+    "description": "Sistema de monitoramento por satelite e IA para detectar desmatamento em tempo real. Guardas florestais com drones autonomos. Economia da floresta em pe com bioeconomia e creditos de carbono.",
+    "description_en": "Satellite and AI monitoring system to detect deforestation in real time. Forest rangers with autonomous drones. Standing forest economy with bioeconomy and carbon credits."
+  },
+  {
+    "category": "education",
+    "icon": "📚",
+    "title": "Educacao Digital Universal",
+    "title_en": "Universal Digital Education",
+    "description": "Tablet e internet para cada estudante da rede publica. Plataforma nacional de ensino adaptativo com IA. Valorizacao do professor com salario de carreira de Estado.",
+    "description_en": "Tablet and internet for every public school student. National adaptive learning platform with AI. Teacher appreciation with state career salary."
+  },
+  {
+    "category": "health",
+    "icon": "🏥",
+    "title": "Reforma do SUS Inteligente",
+    "title_en": "Smart SUS Healthcare Reform",
+    "description": "Modernizacao do Sistema Unico de Saude com prontuario eletronico universal. Telemedicina para comunidades ribeirinhas e quilombolas. IA para triagem e diagnostico em postos de saude.",
+    "description_en": "Modernization of the Unified Health System with universal electronic health records. Telemedicine for riverside and quilombola communities. AI for triage and diagnosis in health posts."
+  },
+  {
+    "category": "security",
+    "icon": "🛡️",
+    "title": "Seguranca Inteligente e Humana",
+    "title_en": "Smart and Humane Security",
+    "description": "Policiamento preditivo com respeito aos direitos humanos. Reforma do sistema prisional com foco em reintegracao. Combate ao trafico de armas com rastreamento tecnologico.",
+    "description_en": "Predictive policing with respect for human rights. Prison system reform focused on reintegration. Combating arms trafficking with technological tracking."
+  },
+  {
+    "category": "corruption",
+    "icon": "⚖️",
+    "title": "Anticorrupcao Blockchain",
+    "title_en": "Anti-Corruption Blockchain",
+    "description": "Todas as licitacoes e contratos publicos registrados em blockchain. Transparencia total do orcamento em tempo real. Fortalecimento da CGU e do Ministerio Publico com tecnologia.",
+    "description_en": "All public bids and contracts recorded on blockchain. Full real-time budget transparency. Strengthening CGU and Public Ministry with technology."
+  },
+  {
+    "category": "economy",
+    "icon": "🏭",
+    "title": "Industrializacao Verde",
+    "title_en": "Green Industrialization",
+    "description": "Reindustrializacao do Brasil com foco em tecnologia limpa. Hidrogenio verde e energia solar como motores de exportacao. Incentivos fiscais para fabricas com emissao zero.",
+    "description_en": "Brazil's reindustrialization focused on clean technology. Green hydrogen and solar energy as export drivers. Tax incentives for zero-emission factories."
+  },
+  {
+    "category": "social",
+    "icon": "✊",
+    "title": "Equidade Racial",
+    "title_en": "Racial Equity",
+    "description": "Combate ao racismo estrutural com politicas afirmativas ampliadas. Reparacao historica para comunidades quilombolas. Programa de empreendedorismo negro com acesso a credito e mentoria.",
+    "description_en": "Fighting structural racism with expanded affirmative policies. Historical reparation for quilombola communities. Black entrepreneurship program with credit access and mentoring."
+  },
+  {
+    "category": "technology",
+    "icon": "🚀",
+    "title": "Soberania Tecnologica",
+    "title_en": "Tech Sovereignty",
+    "description": "Desenvolvimento de IA brasileira com dados soberanos. Semicondutores nacionais e infraestrutura de cloud local. Formacao de 1 milhao de programadores em 5 anos.",
+    "description_en": "Development of Brazilian AI with sovereign data. National semiconductors and local cloud infrastructure. Training 1 million programmers in 5 years."
+  },
+  {
+    "category": "science",
+    "icon": "🔬",
+    "title": "Brasil Potência Científica",
+    "title_en": "Brazil as Scientific Power",
+    "description": "Reativar programa nuclear com Angra 3 e reatores modulares. Programa espacial Alcântara para lançamento de satélites comerciais. Centro de computação quântica em São Paulo. Soberania em semicondutores e IA. Elevar investimento em P&D para 3% do PIB.",
+    "description_en": "Reactivate nuclear program with Angra 3 and modular reactors. Alcântara space program for commercial satellite launches. Quantum computing center in São Paulo. Sovereignty in semiconductors and AI. Raise R&D investment to 3% of GDP."
+  }
 ]

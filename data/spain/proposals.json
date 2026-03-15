@@ -1,10 +1,74 @@
 [
-  { "category": "labor", "icon": "💼", "title": "Revolucion del Empleo Joven", "title_en": "Youth Employment Revolution", "description": "Plan de choque contra el desempleo juvenil del 28%. Formacion profesional dual con empresas tecnologicas. Incentivos fiscales para contratar menores de 30 anos con contratos estables.", "description_en": "Shock plan against 28% youth unemployment. Dual vocational training with tech companies. Tax incentives for hiring under-30s with stable contracts." },
-  { "category": "housing", "icon": "🏠", "title": "Vivienda Asequible para Todos", "title_en": "Affordable Housing for All", "description": "Construccion de 500.000 viviendas publicas de alquiler social. Regulacion efectiva de precios en zonas tensionadas. Rehabilitacion energetica de edificios con fondos europeos.", "description_en": "Construction of 500,000 public social rental housing units. Effective price regulation in stressed areas. Energy rehabilitation of buildings with European funds." },
-  { "category": "governance", "icon": "🤝", "title": "Dialogo Federal Constructivo", "title_en": "Constructive Federal Dialogue", "description": "Reforma constitucional para un modelo federal claro y consensuado. Dialogo permanente con Cataluna, Pais Vasco y todas las comunidades. Financiacion autonomica justa y transparente.", "description_en": "Constitutional reform for a clear and consensual federal model. Permanent dialogue with Catalonia, Basque Country, and all communities. Fair and transparent autonomous financing." },
-  { "category": "social", "icon": "👴", "title": "Sociedad Longeva Activa", "title_en": "Active Longevity Society", "description": "Tecnologia al servicio de los mayores con telemedicina y domotica. Reforma de pensiones sostenible con economia plateada. Centros intergeneracionales en cada municipio.", "description_en": "Technology serving the elderly with telemedicine and home automation. Sustainable pension reform with silver economy. Intergenerational centers in every municipality." },
-  { "category": "economy", "icon": "🏖️", "title": "Turismo Sostenible de Calidad", "title_en": "Sustainable Quality Tourism", "description": "Transicion del turismo masivo al turismo de alto valor. Limites de capacidad en destinos saturados. Diversificacion economica de zonas dependientes del turismo estacional.", "description_en": "Transition from mass tourism to high-value tourism. Capacity limits in saturated destinations. Economic diversification of areas dependent on seasonal tourism." },
-  { "category": "environment", "icon": "💧", "title": "Gestion del Agua con IA", "title_en": "AI Water Management", "description": "Plan hidrologico nacional inteligente para combatir la sequia. Desalinizacion con energia solar en la costa mediterranea. Reutilizacion del 100% de aguas residuales urbanas.", "description_en": "Smart national water plan to combat drought. Solar-powered desalination on the Mediterranean coast. 100% reuse of urban wastewater." },
-  { "category": "social", "icon": "🌍", "title": "Inmigracion Inclusiva", "title_en": "Inclusive Immigration", "description": "Modelo de integracion con formacion lingueistica y profesional desde el primer dia. Reconocimiento agil de titulos extranjeros. Programa de insercion laboral en sectores con deficit de trabajadores.", "description_en": "Integration model with linguistic and professional training from day one. Agile recognition of foreign degrees. Labor insertion program in sectors with worker shortages." },
-  { "category": "energy", "icon": "☀️", "title": "Espana 100% Renovable", "title_en": "100% Renewable Spain", "description": "Objetivo de 100% energia renovable para 2040. Espana como hub europeo de hidrogeno verde. Comunidades energeticas locales y autoconsumo solar en cada hogar.", "description_en": "100% renewable energy target by 2040. Spain as European green hydrogen hub. Local energy communities and solar self-consumption in every home." }
+  {
+    "category": "labor",
+    "icon": "💼",
+    "title": "Revolucion del Empleo Joven",
+    "title_en": "Youth Employment Revolution",
+    "description": "Plan de choque contra el desempleo juvenil del 28%. Formacion profesional dual con empresas tecnologicas. Incentivos fiscales para contratar menores de 30 anos con contratos estables.",
+    "description_en": "Shock plan against 28% youth unemployment. Dual vocational training with tech companies. Tax incentives for hiring under-30s with stable contracts."
+  },
+  {
+    "category": "housing",
+    "icon": "🏠",
+    "title": "Vivienda Asequible para Todos",
+    "title_en": "Affordable Housing for All",
+    "description": "Construccion de 500.000 viviendas publicas de alquiler social. Regulacion efectiva de precios en zonas tensionadas. Rehabilitacion energetica de edificios con fondos europeos.",
+    "description_en": "Construction of 500,000 public social rental housing units. Effective price regulation in stressed areas. Energy rehabilitation of buildings with European funds."
+  },
+  {
+    "category": "governance",
+    "icon": "🤝",
+    "title": "Dialogo Federal Constructivo",
+    "title_en": "Constructive Federal Dialogue",
+    "description": "Reforma constitucional para un modelo federal claro y consensuado. Dialogo permanente con Cataluna, Pais Vasco y todas las comunidades. Financiacion autonomica justa y transparente.",
+    "description_en": "Constitutional reform for a clear and consensual federal model. Permanent dialogue with Catalonia, Basque Country, and all communities. Fair and transparent autonomous financing."
+  },
+  {
+    "category": "social",
+    "icon": "👴",
+    "title": "Sociedad Longeva Activa",
+    "title_en": "Active Longevity Society",
+    "description": "Tecnologia al servicio de los mayores con telemedicina y domotica. Reforma de pensiones sostenible con economia plateada. Centros intergeneracionales en cada municipio.",
+    "description_en": "Technology serving the elderly with telemedicine and home automation. Sustainable pension reform with silver economy. Intergenerational centers in every municipality."
+  },
+  {
+    "category": "economy",
+    "icon": "🏖️",
+    "title": "Turismo Sostenible de Calidad",
+    "title_en": "Sustainable Quality Tourism",
+    "description": "Transicion del turismo masivo al turismo de alto valor. Limites de capacidad en destinos saturados. Diversificacion economica de zonas dependientes del turismo estacional.",
+    "description_en": "Transition from mass tourism to high-value tourism. Capacity limits in saturated destinations. Economic diversification of areas dependent on seasonal tourism."
+  },
+  {
+    "category": "environment",
+    "icon": "💧",
+    "title": "Gestion del Agua con IA",
+    "title_en": "AI Water Management",
+    "description": "Plan hidrologico nacional inteligente para combatir la sequia. Desalinizacion con energia solar en la costa mediterranea. Reutilizacion del 100% de aguas residuales urbanas.",
+    "description_en": "Smart national water plan to combat drought. Solar-powered desalination on the Mediterranean coast. 100% reuse of urban wastewater."
+  },
+  {
+    "category": "social",
+    "icon": "🌍",
+    "title": "Inmigracion Inclusiva",
+    "title_en": "Inclusive Immigration",
+    "description": "Modelo de integracion con formacion lingueistica y profesional desde el primer dia. Reconocimiento agil de titulos extranjeros. Programa de insercion laboral en sectores con deficit de trabajadores.",
+    "description_en": "Integration model with linguistic and professional training from day one. Agile recognition of foreign degrees. Labor insertion program in sectors with worker shortages."
+  },
+  {
+    "category": "energy",
+    "icon": "☀️",
+    "title": "Espana 100% Renovable",
+    "title_en": "100% Renewable Spain",
+    "description": "Objetivo de 100% energia renovable para 2040. Espana como hub europeo de hidrogeno verde. Comunidades energeticas locales y autoconsumo solar en cada hogar.",
+    "description_en": "100% renewable energy target by 2040. Spain as European green hydrogen hub. Local energy communities and solar self-consumption in every home."
+  },
+  {
+    "category": "science",
+    "icon": "🔬",
+    "title": "España Potencia Científica Europea",
+    "title_en": "Spain as European Scientific Power",
+    "description": "Liderar la computación cuántica en Europa desde Barcelona. Programa espacial ibérico con Portugal. Reactores de fusión como parte de ITER. Centro de IA soberana europea. Elevar inversión en I+D al 3% del PIB, equiparando a Alemania y Francia.",
+    "description_en": "Lead quantum computing in Europe from Barcelona. Iberian space program with Portugal. Fusion reactors as part of ITER. European sovereign AI center. Raise R&D investment to 3% of GDP, matching Germany and France."
+  }
 ]
