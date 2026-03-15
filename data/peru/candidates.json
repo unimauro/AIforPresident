@@ -10,7 +10,19 @@
       "Reforma agraria integral",
       "Estado empresario",
       "Soberanía alimentaria"
-    ]
+    ],
+    "scores": {
+      "education": 5,
+      "security": 4,
+      "economy": 4,
+      "health": 5,
+      "environment": 4,
+      "corruption": 5,
+      "technology": 3,
+      "social": 6,
+      "science": 3
+    },
+    "symbol": "✊"
   },
   {
     "name": "Herbert Caller",
@@ -23,7 +35,8 @@
       "Nacionalismo económico",
       "Defensa del territorio",
       "Industrialización"
-    ]
+    ],
+    "symbol": "🇵🇪"
   },
   {
     "name": "Ricardo Belmont",
@@ -36,7 +49,8 @@
       "Obras con canon minero",
       "Infraestructura hospitalaria",
       "Descentralización fiscal"
-    ]
+    ],
+    "symbol": "🏗️"
   },
   {
     "name": "Alex Gonzáles",
@@ -49,7 +63,8 @@
       "Economía verde",
       "Transición energética",
       "Protección de bosques"
-    ]
+    ],
+    "symbol": "🌿"
   },
   {
     "name": "Jorge Nieto",
@@ -62,7 +77,8 @@
       "Reforma del Estado",
       "Meritocracia",
       "Lucha anticorrupción"
-    ]
+    ],
+    "symbol": "⚖️"
   },
   {
     "name": "Francisco Diez-Canseco",
@@ -75,7 +91,8 @@
       "Libre mercado",
       "Reducción tributaria",
       "Inversión privada"
-    ]
+    ],
+    "symbol": "🔷"
   },
   {
     "name": "Walter Chirinos",
@@ -88,7 +105,8 @@
       "Reforma educativa",
       "Salud universal",
       "Trabajo digno"
-    ]
+    ],
+    "symbol": "🔵"
   },
   {
     "name": "Paul Davis Jaimes",
@@ -101,7 +119,8 @@
       "Modernización estatal",
       "Economía digital",
       "Emprendimiento"
-    ]
+    ],
+    "symbol": "📈"
   },
   {
     "name": "Carlos Espá",
@@ -114,7 +133,8 @@
       "Fe y valores",
       "Familia tradicional",
       "Seguridad ciudadana"
-    ]
+    ],
+    "symbol": "✝️"
   },
   {
     "name": "Carlos Álvarez",
@@ -138,7 +158,8 @@
       "technology": 6,
       "social": 5,
       "science": 4
-    }
+    },
+    "symbol": "🤝"
   },
   {
     "name": "Fernando Olivera",
@@ -151,7 +172,8 @@
       "Reforma judicial",
       "Descentralización",
       "Lucha anticorrupción"
-    ]
+    ],
+    "symbol": "🌅"
   },
   {
     "name": "Vladimir Cerrón",
@@ -164,7 +186,8 @@
       "Asamblea constituyente",
       "Nacionalización de recursos",
       "Estado plurinacional"
-    ]
+    ],
+    "symbol": "🔴"
   },
   {
     "name": "Marisol Pérez Tello",
@@ -177,7 +200,8 @@
       "Reforma de justicia",
       "Derechos humanos",
       "Igualdad de género"
-    ]
+    ],
+    "symbol": "👥"
   },
   {
     "name": "Roberto Sánchez",
@@ -190,7 +214,19 @@
       "Economía popular",
       "Derechos laborales",
       "Soberanía alimentaria"
-    ]
+    ],
+    "scores": {
+      "education": 5,
+      "security": 4,
+      "economy": 4,
+      "health": 5,
+      "environment": 5,
+      "corruption": 5,
+      "technology": 3,
+      "social": 7,
+      "science": 3
+    },
+    "symbol": "🟠"
   },
   {
     "name": "José Luna Gálvez",
@@ -203,7 +239,8 @@
       "Educación técnica gratuita",
       "Empleo joven",
       "Infraestructura"
-    ]
+    ],
+    "symbol": "💚"
   },
   {
     "name": "Armando Massé",
@@ -216,7 +253,8 @@
       "Federalismo",
       "Autonomía regional",
       "Reforma tributaria"
-    ]
+    ],
+    "symbol": "🏛️"
   },
   {
     "name": "Álvaro Paz de la Barra",
@@ -229,7 +267,8 @@
       "Seguridad como prioridad",
       "Gestión municipal exitosa",
       "Orden y disciplina"
-    ]
+    ],
+    "symbol": "⭐"
   },
   {
     "name": "Wolfgang Grozo",
@@ -253,7 +292,8 @@
       "technology": 6,
       "social": 5,
       "science": 5
-    }
+    },
+    "symbol": "💜"
   },
   {
     "name": "Keiko Fujimori",
@@ -277,7 +317,8 @@
       "technology": 4,
       "social": 5,
       "science": 2
-    }
+    },
+    "symbol": "🟠"
   },
   {
     "name": "César Acuña",
@@ -301,7 +342,8 @@
       "technology": 5,
       "social": 5,
       "science": 3
-    }
+    },
+    "symbol": "🟢"
   },
   {
     "name": "Yonhy Lescano",
@@ -314,7 +356,8 @@
       "Defensa del consumidor",
       "Reforma constitucional",
       "Agua y saneamiento para todos"
-    ]
+    ],
+    "symbol": "🔵"
   },
   {
     "name": "Alfonso López Chau",
@@ -338,7 +381,8 @@
       "technology": 4,
       "social": 7,
       "science": 4
-    }
+    },
+    "symbol": "🔴"
   },
   {
     "name": "Rafael Belaunde",
@@ -351,7 +395,8 @@
       "Libertad económica",
       "Estado eficiente",
       "Seguridad jurídica"
-    ]
+    ],
+    "symbol": "🗽"
   },
   {
     "name": "Rosario Fernández",
@@ -364,7 +409,8 @@
       "Gobierno de consenso",
       "Diálogo nacional",
       "Reforma política"
-    ]
+    ],
+    "symbol": "🛤️"
   },
   {
     "name": "José Williams",
@@ -377,7 +423,8 @@
       "Orden y seguridad",
       "Libre mercado",
       "Reforma policial"
-    ]
+    ],
+    "symbol": "🔷"
   },
   {
     "name": "Carlos Jaico",
@@ -390,7 +437,8 @@
       "Modernización del Estado",
       "Gobierno digital",
       "Meritocracia"
-    ]
+    ],
+    "symbol": "💎"
   },
   {
     "name": "Mario Vizcarra",
@@ -403,7 +451,8 @@
       "Continuidad de reformas",
       "Infraestructura",
       "Lucha anticorrupción"
-    ]
+    ],
+    "symbol": "🟡"
   },
   {
     "name": "Antonio Ortiz",
@@ -416,7 +465,8 @@
       "Rescate institucional",
       "Economía social",
       "Medio ambiente"
-    ]
+    ],
+    "symbol": "🛡️"
   },
   {
     "name": "George Forsyth",
@@ -440,7 +490,8 @@
       "technology": 5,
       "social": 5,
       "science": 3
-    }
+    },
+    "symbol": "❤️"
   },
   {
     "name": "Enrique Valderrama",
@@ -453,7 +504,8 @@
       "Legado aprista",
       "Justicia social",
       "Integración latinoamericana"
-    ]
+    ],
+    "symbol": "⭐"
   },
   {
     "name": "Rafael López Aliaga",
@@ -477,7 +529,8 @@
       "technology": 3,
       "social": 3,
       "science": 2
-    }
+    },
+    "symbol": "🔵"
   },
   {
     "name": "Charlie Carrasco",
@@ -490,7 +543,8 @@
       "Democracia participativa",
       "Economía social de mercado",
       "Reforma educativa"
-    ]
+    ],
+    "symbol": "🤝"
   },
   {
     "name": "Fiorella Molinelli",
@@ -503,7 +557,8 @@
       "Gestión por resultados",
       "Salud universal",
       "Transparencia fiscal"
-    ]
+    ],
+    "symbol": "🦅"
   },
   {
     "name": "Napoleón Becerra",
@@ -516,7 +571,8 @@
       "Derechos laborales",
       "MYPE sin trabas",
       "Pensión digna"
-    ]
+    ],
+    "symbol": "⚒️"
   },
   {
     "name": "Roberto Chiabra",
@@ -529,7 +585,8 @@
       "Defensa nacional",
       "Orden interno",
       "Reforma militar y policial"
-    ]
+    ],
+    "symbol": "🇵🇪"
   },
   {
     "name": "Mesías Guevara",
@@ -542,7 +599,8 @@
       "Anticorrupción",
       "Reforma política",
       "Desarrollo sostenible"
-    ]
+    ],
+    "symbol": "💜"
   },
   {
     "name": "Presidente IA",
@@ -568,6 +626,7 @@
       "technology": 10,
       "social": 9,
       "science": 10
-    }
+    },
+    "symbol": "🤖"
   }
 ]
