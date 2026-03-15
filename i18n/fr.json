@@ -25,6 +25,19 @@
     "detected": "Il semble que vous êtes en",
     "cta": "Voir le tableau de bord"
   },
+  "search": {
+    "placeholder": "Rechercher des pays...",
+    "no_results": "Aucun pays trouvé",
+    "showing": "affichage"
+  },
+  "regions": {
+    "all": "Tous",
+    "americas": "Amériques",
+    "europe": "Europe",
+    "asia": "Asie",
+    "africa": "Afrique",
+    "oceania": "Océanie"
+  },
   "slider": {
     "title": "Un monde que nous pouvons construire ensemble",
     "subtitle": "Des jalons atteignables avec une gouvernance transparente basée sur les données"

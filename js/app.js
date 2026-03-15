@@ -1,5 +1,8 @@
+let allCountries = [];
+let activeRegion = 'all';
+
 document.addEventListener('DOMContentLoaded', async () => {
-  const { locale, country } = I18n.detect();
+  const { locale } = I18n.detect();
   await I18n.load(locale);
   I18n.apply();
 
@@ -9,22 +12,120 @@ document.addEventListener('DOMContentLoaded', async () => {
     langSelect.addEventListener('change', async (e) => {
       await I18n.load(e.target.value);
       I18n.apply();
-      if (typeof renderCountries === 'function') renderCountries();
+      renderCountries();
+      renderFilters();
       showBanner();
       initSlider();
     });
   }
 
-  if (typeof renderCountries === 'function') renderCountries();
+  renderCountries();
+  renderFilters();
   showBanner();
   initSlider();
+  initHamburger();
+  initBackToTop();
+  initSearch();
 });
 
+/* Hamburger menu */
+function initHamburger() {
+  const toggle = document.getElementById('nav-toggle');
+  const links = document.getElementById('nav-links');
+  if (!toggle || !links) return;
+
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('open');
+    toggle.textContent = links.classList.contains('open') ? '✕' : '☰';
+  });
+
+  links.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+      links.classList.remove('open');
+      toggle.textContent = '☰';
+    }
+  });
+}
+
+/* Back to top */
+function initBackToTop() {
+  const btn = document.getElementById('back-to-top');
+  if (!btn) return;
+
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+/* Search */
+function initSearch() {
+  const input = document.getElementById('country-search');
+  if (!input) return;
+
+  input.addEventListener('input', () => {
+    filterCountries();
+  });
+}
+
+function filterCountries() {
+  const input = document.getElementById('country-search');
+  const query = (input ? input.value : '').toLowerCase().trim();
+  const grid = document.getElementById('countries-grid');
+  const noResults = document.getElementById('no-results');
+  const countEl = document.getElementById('search-count');
+  if (!grid) return;
+
+  const cards = grid.querySelectorAll('.country-card');
+  let visible = 0;
+
+  cards.forEach(card => {
+    const name = card.dataset.name.toLowerCase();
+    const region = card.dataset.region;
+    const matchSearch = !query || name.includes(query);
+    const matchRegion = activeRegion === 'all' || region === activeRegion;
+    const show = matchSearch && matchRegion;
+    card.classList.toggle('card-hidden', !show);
+    if (show) visible++;
+  });
+
+  if (noResults) noResults.style.display = visible === 0 ? 'block' : 'none';
+  if (countEl) countEl.textContent = query || activeRegion !== 'all' ? `${visible}/${cards.length}` : '';
+}
+
+/* Region filter tabs */
+function renderFilters() {
+  const container = document.getElementById('filter-tabs');
+  if (!container) return;
+
+  const regions = ['all', 'americas', 'europe', 'asia', 'africa', 'oceania'];
+
+  container.innerHTML = regions.map(r => `
+    <button class="filter-tab ${r === activeRegion ? 'active' : ''}" data-region="${r}">
+      ${I18n.t(`regions.${r}`)}
+    </button>
+  `).join('');
+
+  container.addEventListener('click', (e) => {
+    const tab = e.target.closest('.filter-tab');
+    if (!tab) return;
+    activeRegion = tab.dataset.region;
+    container.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    filterCountries();
+  });
+}
+
+/* Country banner */
 const COUNTRY_MAP = {
   PE: { name: 'Perú', path: 'countries/peru.html' },
   AR: { name: 'Argentina', path: '#' },
   MX: { name: 'México', path: '#' },
-  CO: { name: 'Colombia', path: '#' }
+  CO: { name: 'Colombia', path: '#' },
+  BR: { name: 'Brasil', path: '#' }
 };
 
 function showBanner() {
@@ -68,13 +169,11 @@ async function initSlider() {
       </div>
     `).join('');
 
-    // Slider logic
     let currentIndex = 0;
-    const slideWidth = 320 + 24; // min-width + gap
+    const slideWidth = 320 + 24;
     const visibleSlides = Math.floor(track.offsetWidth / slideWidth) || 1;
     const maxIndex = Math.max(0, slides.length - visibleSlides);
 
-    // Dots
     if (dotsContainer) {
       dotsContainer.innerHTML = slides.map((_, i) =>
         `<span class="slider-dot ${i === 0 ? 'active' : ''}" data-index="${i}"></span>`
@@ -100,7 +199,6 @@ async function initSlider() {
       });
     }
 
-    // Buttons
     const prevBtn = document.querySelector('.slider-prev');
     const nextBtn = document.querySelector('.slider-next');
 
@@ -114,7 +212,6 @@ async function initSlider() {
       scrollToSlide();
     });
 
-    // Auto-play
     let autoPlay = setInterval(() => {
       currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
       scrollToSlide();
@@ -128,7 +225,6 @@ async function initSlider() {
       }, 5000);
     });
 
-    // Touch support
     let touchStartX = 0;
     track.addEventListener('touchstart', (e) => {
       touchStartX = e.touches[0].clientX;
@@ -149,22 +245,36 @@ async function initSlider() {
   }
 }
 
+/* Render countries */
 async function renderCountries() {
   const grid = document.getElementById('countries-grid');
   if (!grid) return;
 
   try {
     const res = await fetch('data/countries.json');
-    const countries = await res.json();
+    allCountries = await res.json();
 
-    grid.innerHTML = countries.map(c => {
+    // Sort: active first, then alphabetical
+    allCountries.sort((a, b) => {
+      if (a.status === 'active' && b.status !== 'active') return -1;
+      if (b.status === 'active' && a.status !== 'active') return 1;
+      const nameA = I18n.locale === 'en' ? a.name_en : a.name;
+      const nameB = I18n.locale === 'en' ? b.name_en : b.name;
+      return nameA.localeCompare(nameB);
+    });
+
+    grid.innerHTML = allCountries.map(c => {
       const isActive = c.status === 'active';
       const name = I18n.locale === 'en' ? c.name_en : c.name;
       const badgeClass = isActive ? 'badge-active' : 'badge-soon';
       const badgeText = isActive ? I18n.t('countries.active') : I18n.t('countries.coming_soon');
 
       return `
-        <a href="${isActive ? c.path : '#'}" class="card" style="${isActive ? '' : 'opacity:0.6;pointer-events:none'}">
+        <a href="${isActive ? c.path : '#'}"
+           class="card country-card ${isActive ? '' : 'card-inactive'}"
+           data-name="${c.name} ${c.name_en}"
+           data-region="${c.region}"
+           style="${isActive ? '' : 'opacity:0.6;pointer-events:none'}">
           <div class="card-header">
             <span class="card-flag">${c.flag}</span>
             <div>

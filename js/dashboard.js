@@ -224,4 +224,17 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   Dashboard.init();
+
+  // Hamburger
+  const toggle = document.getElementById('nav-toggle');
+  const links = document.getElementById('nav-links');
+  if (toggle && links) {
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      toggle.textContent = links.classList.contains('open') ? '✕' : '☰';
+    });
+    links.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') { links.classList.remove('open'); toggle.textContent = '☰'; }
+    });
+  }
 });

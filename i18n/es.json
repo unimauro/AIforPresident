@@ -45,6 +45,19 @@
     "technology": "Tecnología",
     "social": "Inclusión Social"
   },
+  "search": {
+    "placeholder": "Buscar países...",
+    "no_results": "No se encontraron países",
+    "showing": "mostrando"
+  },
+  "regions": {
+    "all": "Todos",
+    "americas": "Américas",
+    "europe": "Europa",
+    "asia": "Asia",
+    "africa": "África",
+    "oceania": "Oceanía"
+  },
   "slider": {
     "title": "Un mundo que podemos construir juntos",
     "subtitle": "Hitos alcanzables con gobernanza transparente basada en datos"

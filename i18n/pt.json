@@ -25,6 +25,19 @@
     "detected": "Parece que você está em",
     "cta": "Ver painel"
   },
+  "search": {
+    "placeholder": "Buscar países...",
+    "no_results": "Nenhum país encontrado",
+    "showing": "mostrando"
+  },
+  "regions": {
+    "all": "Todos",
+    "americas": "Américas",
+    "europe": "Europa",
+    "asia": "Ásia",
+    "africa": "África",
+    "oceania": "Oceania"
+  },
   "slider": {
     "title": "Um mundo que podemos construir juntos",
     "subtitle": "Marcos alcançáveis com governança transparente baseada em dados"

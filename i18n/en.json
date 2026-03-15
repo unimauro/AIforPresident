@@ -45,6 +45,19 @@
     "technology": "Technology",
     "social": "Social Inclusion"
   },
+  "search": {
+    "placeholder": "Search countries...",
+    "no_results": "No countries found",
+    "showing": "showing"
+  },
+  "regions": {
+    "all": "All",
+    "americas": "Americas",
+    "europe": "Europe",
+    "asia": "Asia",
+    "africa": "Africa",
+    "oceania": "Oceania"
+  },
   "slider": {
     "title": "A world we could build together",
     "subtitle": "Milestones achievable with transparent, data-driven governance"
