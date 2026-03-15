@@ -14,7 +14,7 @@ const PDFGenerator = {
       fetch(`${base}proposals.json`).then(r => r.json()),
       fetch(`${base}statistics.json`).then(r => r.json()),
       fetch(`${base}candidates.json`).then(r => r.json()).catch(() => []),
-      fetch('../data/peru/issues.json').then(r => r.json())
+      fetch(`${base}issues.json`).then(r => r.json())
     ]);
 
     // Colors
@@ -130,13 +130,14 @@ const PDFGenerator = {
       y += lines.length * 4.5 + 8;
     });
 
-    // === PAGE 3: CANDIDATE COMPARISON ===
+    // === PAGE 3: CANDIDATE COMPARISON (only if data exists) ===
+    if (candidates && candidates.length > 0) {
     doc.addPage();
     doc.setFillColor(...dark);
     doc.rect(0, 0, pageWidth, 297, 'F');
     y = 20;
 
-    y = this.addSectionTitle(doc, isEn ? '2026 Candidate Comparison' : 'Comparación de Candidatos 2026', y, blue, white);
+    y = this.addSectionTitle(doc, isEn ? 'Candidate Comparison' : 'Comparación de Candidatos', y, blue, white);
     y += 5;
 
     const dims = ['education', 'security', 'economy', 'health', 'environment', 'corruption', 'technology', 'social'];
@@ -229,6 +230,7 @@ const PDFGenerator = {
       });
       y += 5;
     });
+    } // end if candidates
 
     // === PAGE 4: KEY ISSUES ===
     doc.addPage();
