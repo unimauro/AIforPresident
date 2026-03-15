@@ -55,7 +55,8 @@ const Dashboard = {
       this.fetchJSON('statistics.json'),
       this.fetchJSON('proposals.json'),
       this.fetchJSON('candidates.json').catch(() => []),
-      this.fetchJSON('issues.json')
+      this.fetchJSON('issues.json'),
+      this.fetchJSON('polls.json').catch(() => null)
     ]);
 
     this.updateHeroTitle();
@@ -70,9 +71,31 @@ const Dashboard = {
       if (candSection) candSection.style.display = '';
       if (compSection) compSection.style.display = '';
       this.renderCandidates(candidates);
-      this.renderRadarChart(candidates);
-      this.renderBarChart(candidates);
-      this.renderComparisonTable(candidates);
+
+      // Only render score charts if candidates have scores
+      if (candidates[0] && candidates[0].scores) {
+        this.renderRadarChart(candidates.filter(c => c.scores));
+        this.renderBarChart(candidates.filter(c => c.scores));
+        this.renderComparisonTable(candidates.filter(c => c.scores));
+      }
+
+      // Candidate search
+      const searchInput = document.getElementById('candidate-search');
+      if (searchInput) {
+        searchInput.addEventListener('input', () => {
+          const q = searchInput.value.toLowerCase();
+          document.querySelectorAll('#candidates-grid .card').forEach(card => {
+            const text = card.dataset.search || '';
+            card.style.display = text.includes(q) ? '' : 'none';
+          });
+        });
+      }
+    }
+
+    // Polls section
+    if (polls) {
+      this.renderPollsChart(polls);
+      this.renderPollsTable(polls);
     }
 
     this.renderIssues(issues);
@@ -126,16 +149,27 @@ const Dashboard = {
   renderCandidates(candidates) {
     const grid = document.getElementById('candidates-grid');
     if (!grid) return;
+    const isEn = I18n.locale === 'en';
 
-    grid.innerHTML = candidates.map(c => `
-      <div class="card" style="border-left: 3px solid ${c.color}">
-        <div class="card-title" style="color:${c.color}">${c.name}</div>
-        <div class="card-subtitle">${c.party}</div>
-        <ul style="margin-top:0.75rem; padding-left:1.2rem; color:var(--text-secondary); font-size:0.85rem;">
-          ${c.key_proposals.map(p => `<li>${p}</li>`).join('')}
-        </ul>
-      </div>
-    `).join('');
+    grid.innerHTML = candidates.map(c => {
+      const pollBadge = c.poll ? `<span class="badge badge-active" style="margin-left:0.5rem">${c.poll}%</span>` : '';
+      const position = c.position ? `<span style="color:var(--text-secondary);font-size:0.75rem">#${c.position}</span> ` : '';
+      const planLink = c.plan_url ? `<a href="${c.plan_url}" target="_blank" rel="noopener" style="font-size:0.8rem; display:inline-block; margin-top:0.5rem;">📄 ${isEn ? 'Government Plan' : 'Plan de Gobierno'}</a>` : '';
+
+      return `
+        <div class="card" style="border-left: 3px solid ${c.color}" data-search="${(c.name + ' ' + c.party).toLowerCase()}">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div class="card-title" style="color:${c.color}">${position}${c.name}</div>
+            ${pollBadge}
+          </div>
+          <div class="card-subtitle">${c.party}</div>
+          <ul style="margin-top:0.5rem; padding-left:1.2rem; color:var(--text-secondary); font-size:0.82rem;">
+            ${c.key_proposals.map(p => `<li>${p}</li>`).join('')}
+          </ul>
+          ${planLink}
+        </div>
+      `;
+    }).join('');
   },
 
   radarChart: null,
@@ -272,6 +306,88 @@ const Dashboard = {
         </table>
       </div>
     `;
+  },
+
+  pollsChart: null,
+
+  renderPollsChart(polls) {
+    const canvas = document.getElementById('polls-chart');
+    if (!canvas || !polls.polls) return;
+
+    if (this.pollsChart) this.pollsChart.destroy();
+
+    const sortedPolls = [...polls.polls].sort((a, b) => new Date(a.date) - new Date(b.date));
+    const labels = sortedPolls.map(p => {
+      const d = new Date(p.date);
+      return `${p.pollster} ${d.toLocaleDateString('es', { month: 'short', day: 'numeric' })}`;
+    });
+
+    const datasets = polls.candidates_tracked.map(ct => ({
+      label: ct.name,
+      data: sortedPolls.map(p => p.results[ct.id] || null),
+      borderColor: ct.color,
+      backgroundColor: ct.color + '20',
+      pointBackgroundColor: ct.color,
+      borderWidth: 2,
+      tension: 0.3,
+      spanGaps: true
+    }));
+
+    this.pollsChart = new Chart(canvas, {
+      type: 'line',
+      data: { labels, datasets },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        scales: {
+          x: { ticks: { color: '#8b949e', maxRotation: 45 }, grid: { color: '#30363d' } },
+          y: { beginAtZero: true, max: 18, ticks: { color: '#8b949e', callback: v => v + '%' }, grid: { color: '#30363d' } }
+        },
+        plugins: {
+          legend: { position: 'bottom', labels: { color: '#e6edf3', padding: 10, usePointStyle: true, font: { size: 11 } } },
+          tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${ctx.parsed.y}%` } }
+        }
+      }
+    });
+  },
+
+  renderPollsTable(polls) {
+    const container = document.getElementById('polls-table-container');
+    const disclaimerEl = document.getElementById('polls-disclaimer');
+    if (!container || !polls.polls) return;
+
+    const isEn = I18n.locale === 'en';
+    const sorted = [...polls.polls].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    const headerCells = polls.candidates_tracked.map(ct =>
+      `<th style="color:${ct.color};min-width:70px">${ct.name}</th>`
+    ).join('');
+
+    const rows = sorted.map(p => {
+      const d = new Date(p.date);
+      const dateStr = d.toLocaleDateString('es', { year: 'numeric', month: 'short', day: 'numeric' });
+      const cells = polls.candidates_tracked.map(ct => {
+        const val = p.results[ct.id];
+        if (!val) return '<td>—</td>';
+        const cls = val >= 8 ? 'score-high' : val >= 4 ? 'score-mid' : '';
+        return `<td class="${cls}">${val}%</td>`;
+      }).join('');
+      return `<tr><td><strong>${p.pollster}</strong><br><span style="font-size:0.75rem;color:var(--text-secondary)">${dateStr}</span></td>${cells}</tr>`;
+    }).join('');
+
+    container.innerHTML = `
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>${isEn ? 'Pollster' : 'Encuestadora'}</th>${headerCells}</tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    `;
+
+    if (disclaimerEl) {
+      disclaimerEl.textContent = isEn ? polls.disclaimer_en : polls.disclaimer;
+    }
   }
 };
 

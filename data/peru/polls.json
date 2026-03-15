@@ -1,0 +1,65 @@
+{
+  "disclaimer": "Datos de encuestas publicadas por empresas encuestadoras registradas. Los resultados tienen un margen de error de ±2.5 puntos porcentuales. Las encuestas no son predicciones sino fotografías del momento.",
+  "disclaimer_en": "Data from polls published by registered polling firms. Results have a margin of error of ±2.5 percentage points. Polls are snapshots, not predictions.",
+  "election_date": "2026-04-12",
+  "sources": [
+    { "name": "Datum Internacional", "url": "https://www.datum.com.pe" },
+    { "name": "Ipsos Perú", "url": "https://www.ipsos.com/es-pe" },
+    { "name": "CPI", "url": "https://www.cpi.pe" },
+    { "name": "IEP", "url": "https://iep.org.pe" }
+  ],
+  "candidates_tracked": [
+    { "id": "rla", "name": "R. López Aliaga", "party": "Renovación Popular", "color": "#1E3A5F" },
+    { "id": "kf", "name": "K. Fujimori", "party": "Fuerza Popular", "color": "#FF6B35" },
+    { "id": "alc", "name": "A. López Chau", "party": "Ahora Nación", "color": "#8B0000" },
+    { "id": "ca", "name": "C. Acuña", "party": "Alianza Para el Progreso", "color": "#00A651" },
+    { "id": "cal", "name": "C. Álvarez", "party": "País Para Todos", "color": "#96CEB4" },
+    { "id": "wg", "name": "W. Grozo", "party": "Integridad Democrática", "color": "#6A0DAD" },
+    { "id": "gf", "name": "G. Forsyth", "party": "Somos Perú", "color": "#E31937" },
+    { "id": "mv", "name": "M. Vizcarra", "party": "Perú Primero", "color": "#D4A017" }
+  ],
+  "polls": [
+    {
+      "pollster": "CPI",
+      "date": "2025-12-15",
+      "sample_size": 1420,
+      "results": { "rla": 8.2, "kf": 6.5, "alc": 3.1, "ca": 3.0, "cal": 2.5, "wg": 1.0, "gf": 2.8, "mv": 2.0 }
+    },
+    {
+      "pollster": "Datum",
+      "date": "2026-01-12",
+      "sample_size": 1500,
+      "results": { "rla": 10.5, "kf": 8.2, "alc": 3.8, "ca": 3.5, "cal": 3.0, "wg": 1.5, "gf": 2.5, "mv": 2.2 }
+    },
+    {
+      "pollster": "Ipsos",
+      "date": "2026-01-20",
+      "sample_size": 1500,
+      "results": { "rla": 11.0, "kf": 8.0, "alc": 3.5, "ca": 3.2, "cal": 2.8, "wg": 1.2, "gf": 3.0, "mv": 2.0 }
+    },
+    {
+      "pollster": "CPI",
+      "date": "2026-02-17",
+      "sample_size": 1480,
+      "results": { "rla": 13.9, "kf": 7.0, "alc": 5.1, "ca": 4.4, "cal": 4.0, "wg": 2.0, "gf": 2.5, "mv": 3.2 }
+    },
+    {
+      "pollster": "Ipsos",
+      "date": "2026-02-20",
+      "sample_size": 1500,
+      "results": { "rla": 10.0, "kf": 9.0, "alc": 4.0, "ca": 4.0, "cal": 3.0, "wg": 1.0, "gf": 3.0, "mv": 2.0 }
+    },
+    {
+      "pollster": "Datum",
+      "date": "2026-03-04",
+      "sample_size": 1500,
+      "results": { "rla": 10.0, "kf": 10.7, "alc": 5.5, "ca": 5.2, "cal": 5.0, "wg": 4.2, "gf": 1.8, "mv": 2.3 }
+    },
+    {
+      "pollster": "Ipsos",
+      "date": "2026-03-06",
+      "sample_size": 1500,
+      "results": { "rla": 11.7, "kf": 9.5, "alc": 4.8, "ca": 5.0, "cal": 6.0, "wg": 4.0, "gf": 2.0, "mv": 2.5 }
+    }
+  ]
+}

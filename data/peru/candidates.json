@@ -1,188 +1,38 @@
 [
-  {
-    "name": "Keiko Fujimori",
-    "party": "Fuerza Popular",
-    "color": "#FF6B35",
-    "poll": 10.7,
-    "poll_source": "Datum, Mar 2026",
-    "key_proposals": [
-      "Mano dura contra la inseguridad",
-      "Reactivación económica con inversión privada",
-      "Programas sociales focalizados"
-    ],
-    "scores": {
-      "education": 5,
-      "security": 7,
-      "economy": 7,
-      "health": 5,
-      "environment": 3,
-      "corruption": 3,
-      "technology": 4,
-      "social": 5,
-      "science": 2
-    }
-  },
-  {
-    "name": "Rafael López Aliaga",
-    "party": "Renovación Popular",
-    "color": "#1E3A5F",
-    "poll": 10.0,
-    "poll_source": "Datum, Mar 2026",
-    "key_proposals": [
-      "Pena de muerte para violadores",
-      "Reducción del Estado",
-      "Infraestructura vial y trenes"
-    ],
-    "scores": {
-      "education": 4,
-      "security": 7,
-      "economy": 6,
-      "health": 4,
-      "environment": 3,
-      "corruption": 4,
-      "technology": 3,
-      "social": 3,
-      "science": 2
-    }
-  },
-  {
-    "name": "Alfonso López Chau",
-    "party": "Ahora Nación",
-    "color": "#8B0000",
-    "poll": 5.5,
-    "poll_source": "Datum, Mar 2026",
-    "key_proposals": [
-      "Asamblea constituyente",
-      "Nacionalización de recursos estratégicos",
-      "Reforma tributaria progresiva"
-    ],
-    "scores": {
-      "education": 6,
-      "security": 5,
-      "economy": 5,
-      "health": 6,
-      "environment": 5,
-      "corruption": 6,
-      "technology": 4,
-      "social": 7,
-      "science": 4
-    }
-  },
-  {
-    "name": "César Acuña",
-    "party": "Alianza Para el Progreso",
-    "color": "#00A651",
-    "poll": 5.2,
-    "poll_source": "Datum, Mar 2026",
-    "key_proposals": [
-      "Inversión en educación técnica",
-      "Descentralización efectiva",
-      "Obra pública regional"
-    ],
-    "scores": {
-      "education": 6,
-      "security": 4,
-      "economy": 6,
-      "health": 5,
-      "environment": 4,
-      "corruption": 3,
-      "technology": 5,
-      "social": 5,
-      "science": 3
-    }
-  },
-  {
-    "name": "Carlos Álvarez",
-    "party": "País Para Todos",
-    "color": "#96CEB4",
-    "poll": 5.0,
-    "poll_source": "Datum, Mar 2026",
-    "key_proposals": [
-      "Inversión privada responsable",
-      "Emprendimiento popular",
-      "Educación técnica productiva"
-    ],
-    "scores": {
-      "education": 6,
-      "security": 4,
-      "economy": 7,
-      "health": 5,
-      "environment": 5,
-      "corruption": 5,
-      "technology": 6,
-      "social": 5,
-      "science": 4
-    }
-  },
-  {
-    "name": "Wolfgang Grozo",
-    "party": "Integridad Democrática",
-    "color": "#6A0DAD",
-    "poll": 4.2,
-    "poll_source": "Datum, Mar 2026",
-    "key_proposals": [
-      "Gobierno digital ciudadano",
-      "Lucha frontal contra la corrupción",
-      "Reforma total del Estado"
-    ],
-    "scores": {
-      "education": 5,
-      "security": 5,
-      "economy": 5,
-      "health": 5,
-      "environment": 4,
-      "corruption": 7,
-      "technology": 6,
-      "social": 5,
-      "science": 5
-    }
-  },
-  {
-    "name": "George Forsyth",
-    "party": "Somos Perú",
-    "color": "#E31937",
-    "poll": 1.8,
-    "poll_source": "Datum, Mar 2026",
-    "key_proposals": [
-      "Seguridad ciudadana con tecnología",
-      "Deporte como herramienta social",
-      "Modernización municipal"
-    ],
-    "scores": {
-      "education": 5,
-      "security": 6,
-      "economy": 5,
-      "health": 5,
-      "environment": 4,
-      "corruption": 5,
-      "technology": 5,
-      "social": 5,
-      "science": 3
-    }
-  },
-  {
-    "name": "Presidente IA",
-    "party": "AI for President",
-    "color": "#58a6ff",
-    "poll": null,
-    "poll_source": null,
-    "key_proposals": [
-      "Transparencia total con blockchain",
-      "Educación digital universal",
-      "Gobierno 100% digital",
-      "Salud preventiva con IA",
-      "Soberanía científica y tecnológica"
-    ],
-    "scores": {
-      "education": 9,
-      "security": 8,
-      "economy": 8,
-      "health": 9,
-      "environment": 9,
-      "corruption": 10,
-      "technology": 10,
-      "social": 9,
-      "science": 10
-    }
-  }
+  { "name": "Ronald Atencio", "party": "Alianza Venceremos", "color": "#C0392B", "poll": null, "position": 1, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Reforma agraria integral", "Estado empresario", "Soberanía alimentaria"] },
+  { "name": "Herbert Caller", "party": "Partido Patriótico del Perú", "color": "#7D3C98", "poll": null, "position": 2, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Nacionalismo económico", "Defensa del territorio", "Industrialización"] },
+  { "name": "Ricardo Belmont", "party": "Partido Cívico Obras", "color": "#F39C12", "poll": 1.4, "position": 3, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Obras con canon minero", "Infraestructura hospitalaria", "Descentralización fiscal"] },
+  { "name": "Alex Gonzáles", "party": "Partido Demócrata Verde", "color": "#27AE60", "poll": null, "position": 4, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Economía verde", "Transición energética", "Protección de bosques"] },
+  { "name": "Jorge Nieto", "party": "Partido del Buen Gobierno", "color": "#2C3E50", "poll": null, "position": 5, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Reforma del Estado", "Meritocracia", "Lucha anticorrupción"] },
+  { "name": "Francisco Diez-Canseco", "party": "Perú Acción", "color": "#8E44AD", "poll": null, "position": 6, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Libre mercado", "Reducción tributaria", "Inversión privada"] },
+  { "name": "Walter Chirinos", "party": "Partido PRIN", "color": "#1ABC9C", "poll": null, "position": 7, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Reforma educativa", "Salud universal", "Trabajo digno"] },
+  { "name": "Paul Davis Jaimes", "party": "Progresemos", "color": "#3498DB", "poll": null, "position": 8, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Modernización estatal", "Economía digital", "Emprendimiento"] },
+  { "name": "Carlos Espá", "party": "Partido Sí Creo", "color": "#E74C3C", "poll": null, "position": 9, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Fe y valores", "Familia tradicional", "Seguridad ciudadana"] },
+  { "name": "Carlos Álvarez", "party": "País Para Todos", "color": "#96CEB4", "poll": 5.0, "position": 10, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Inversión privada responsable", "Emprendimiento popular", "Educación técnica productiva"] },
+  { "name": "Fernando Olivera", "party": "Frente de la Esperanza", "color": "#4ECDC4", "poll": null, "position": 11, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Reforma judicial", "Descentralización", "Lucha anticorrupción"] },
+  { "name": "Vladimir Cerrón", "party": "Perú Libre", "color": "#C0392B", "poll": null, "position": 12, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Asamblea constituyente", "Nacionalización de recursos", "Estado plurinacional"] },
+  { "name": "Marisol Pérez Tello", "party": "Primero La Gente", "color": "#9B59B6", "poll": null, "position": 13, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Reforma de justicia", "Derechos humanos", "Igualdad de género"] },
+  { "name": "Roberto Sánchez", "party": "Juntos por el Perú", "color": "#E67E22", "poll": 1.9, "position": 14, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Economía popular", "Derechos laborales", "Soberanía alimentaria"] },
+  { "name": "José Luna Gálvez", "party": "Podemos Perú", "color": "#2ECC71", "poll": 1.3, "position": 15, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Educación técnica gratuita", "Empleo joven", "Infraestructura"] },
+  { "name": "Armando Massé", "party": "Partido Democrático Federal", "color": "#16A085", "poll": null, "position": 16, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Federalismo", "Autonomía regional", "Reforma tributaria"] },
+  { "name": "Álvaro Paz de la Barra", "party": "Fe en el Perú", "color": "#D35400", "poll": null, "position": 17, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Seguridad como prioridad", "Gestión municipal exitosa", "Orden y disciplina"] },
+  { "name": "Wolfgang Grozo", "party": "Integridad Democrática", "color": "#6A0DAD", "poll": 4.2, "position": 18, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Gobierno digital ciudadano", "Lucha frontal contra la corrupción", "Reforma total del Estado"] },
+  { "name": "Keiko Fujimori", "party": "Fuerza Popular", "color": "#FF6B35", "poll": 10.7, "position": 19, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Mano dura contra la inseguridad", "Reactivación económica", "Programas sociales focalizados"] },
+  { "name": "César Acuña", "party": "Alianza Para el Progreso", "color": "#00A651", "poll": 5.2, "position": 20, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Inversión en educación técnica", "Descentralización efectiva", "Obra pública regional"] },
+  { "name": "Yonhy Lescano", "party": "Cooperación Popular", "color": "#2980B9", "poll": 2.6, "position": 21, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Defensa del consumidor", "Reforma constitucional", "Agua y saneamiento para todos"] },
+  { "name": "Alfonso López Chau", "party": "Ahora Nación", "color": "#8B0000", "poll": 5.5, "position": 22, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Asamblea constituyente", "Nacionalización de recursos estratégicos", "Reforma tributaria progresiva"] },
+  { "name": "Rafael Belaunde", "party": "Libertad Popular", "color": "#5DADE2", "poll": null, "position": 23, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Libertad económica", "Estado eficiente", "Seguridad jurídica"] },
+  { "name": "Rosario Fernández", "party": "Un Camino Diferente", "color": "#AF7AC5", "poll": null, "position": 24, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Gobierno de consenso", "Diálogo nacional", "Reforma política"] },
+  { "name": "José Williams", "party": "Avanza País", "color": "#45B7D1", "poll": null, "position": 25, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Orden y seguridad", "Libre mercado", "Reforma policial"] },
+  { "name": "Carlos Jaico", "party": "Perú Moderno", "color": "#5499C7", "poll": null, "position": 26, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Modernización del Estado", "Gobierno digital", "Meritocracia"] },
+  { "name": "Mario Vizcarra", "party": "Perú Primero", "color": "#D4A017", "poll": 2.3, "position": 27, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Continuidad de reformas", "Infraestructura", "Lucha anticorrupción"] },
+  { "name": "Antonio Ortiz", "party": "Salvemos al Perú", "color": "#239B56", "poll": null, "position": 28, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Rescate institucional", "Economía social", "Medio ambiente"] },
+  { "name": "George Forsyth", "party": "Somos Perú", "color": "#E31937", "poll": 1.8, "position": 29, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Seguridad ciudadana con tecnología", "Deporte como herramienta social", "Modernización municipal"] },
+  { "name": "Enrique Valderrama", "party": "Aprista Peruano", "color": "#C0392B", "poll": null, "position": 30, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Legado aprista", "Justicia social", "Integración latinoamericana"] },
+  { "name": "Rafael López Aliaga", "party": "Renovación Popular", "color": "#1E3A5F", "poll": 10.0, "position": 31, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Pena de muerte para violadores", "Reducción del Estado", "Infraestructura vial y trenes"] },
+  { "name": "Charlie Carrasco", "party": "Demócrata Unido Perú", "color": "#117A65", "poll": null, "position": 32, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Democracia participativa", "Economía social de mercado", "Reforma educativa"] },
+  { "name": "Fiorella Molinelli", "party": "Alianza Fuerza y Libertad", "color": "#884EA0", "poll": null, "position": 33, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Gestión por resultados", "Salud universal", "Transparencia fiscal"] },
+  { "name": "Napoleón Becerra", "party": "Trabajadores y Emprendedores", "color": "#D68910", "poll": null, "position": 34, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Derechos laborales", "MYPE sin trabas", "Pensión digna"] },
+  { "name": "Roberto Chiabra", "party": "Alianza Unidad Nacional", "color": "#1F618D", "poll": null, "position": 35, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Defensa nacional", "Orden interno", "Reforma militar y policial"] },
+  { "name": "Mesías Guevara", "party": "Partido Morado", "color": "#7D3C98", "poll": null, "position": 36, "plan_url": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar", "key_proposals": ["Anticorrupción", "Reforma política", "Desarrollo sostenible"] }
 ]
