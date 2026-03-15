@@ -2,12 +2,28 @@ const I18n = {
   locale: 'en',
   country: null,
   strings: {},
+  supportedLocales: ['en', 'es', 'pt', 'fr'],
 
   detect() {
-    const lang = navigator.language || 'en';
-    const parts = lang.split('-');
-    this.locale = parts[0];
-    this.country = parts[1] || null;
+    // Priority: 1) URL param ?lang=  2) localStorage  3) navigator.language
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlLang = urlParams.get('lang');
+
+    if (urlLang && this.supportedLocales.includes(urlLang)) {
+      this.locale = urlLang;
+      this.country = null;
+    } else {
+      const saved = localStorage.getItem('ai4pres-lang');
+      if (saved && this.supportedLocales.includes(saved)) {
+        this.locale = saved;
+      } else {
+        const lang = navigator.language || 'en';
+        const parts = lang.split('-');
+        this.locale = this.supportedLocales.includes(parts[0]) ? parts[0] : 'en';
+        this.country = parts[1] || null;
+      }
+    }
+
     return { locale: this.locale, country: this.country };
   },
 
@@ -18,6 +34,7 @@ const I18n = {
       if (!res.ok) throw new Error('Not found');
       this.strings = await res.json();
       this.locale = locale;
+      localStorage.setItem('ai4pres-lang', locale);
     } catch {
       if (locale !== 'en') {
         await this.load('en');
@@ -53,7 +70,23 @@ const I18n = {
         el.placeholder = text;
       }
     });
+
+    // Update HTML lang attribute
     document.documentElement.lang = this.locale;
+
+    // Update page title
+    const siteTitle = this.t('site.title');
+    const tagline = this.t('site.tagline');
+    if (siteTitle !== 'site.title') {
+      document.title = `${siteTitle} — ${tagline}`;
+    }
+
+    // Update meta description
+    const desc = this.t('hero.subtitle');
+    if (desc !== 'hero.subtitle') {
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute('content', desc);
+    }
   },
 
   _getBasePath() {

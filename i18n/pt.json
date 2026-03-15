@@ -1,0 +1,56 @@
+{
+  "site": {
+    "title": "AI for President",
+    "tagline": "Governança ideal impulsionada por IA para um mundo justo e em paz"
+  },
+  "nav": {
+    "home": "Início",
+    "countries": "Países",
+    "about": "Sobre",
+    "language": "Idioma"
+  },
+  "hero": {
+    "title": "E se a IA governasse para o povo?",
+    "subtitle": "Propostas geradas por inteligência artificial para construir sociedades justas, solidárias e em paz. Sem corrupção, sem interesses ocultos — apenas dados, evidências e bem-estar humano.",
+    "cta": "Explorar países"
+  },
+  "countries": {
+    "title": "Países",
+    "featured": "Destaque",
+    "active": "Ativo",
+    "coming_soon": "Em breve",
+    "explore": "Explorar"
+  },
+  "banner": {
+    "detected": "Parece que você está em",
+    "cta": "Ver painel"
+  },
+  "slider": {
+    "title": "Um mundo que podemos construir juntos",
+    "subtitle": "Marcos alcançáveis com governança transparente baseada em dados"
+  },
+  "peru": {
+    "title": "Presidente IA para o Peru",
+    "subtitle": "Propostas ideais e análise eleitoral 2026",
+    "stats": "Estatísticas do País",
+    "proposals": "Propostas do Presidente IA",
+    "candidates": "Comparação de Candidatos 2026",
+    "issues": "Problemas Chave",
+    "radar_title": "Comparação por Dimensões",
+    "plan_analysis": "Análise de Planos de Governo"
+  },
+  "dimensions": {
+    "education": "Educação",
+    "security": "Segurança",
+    "economy": "Economia",
+    "health": "Saúde",
+    "environment": "Meio Ambiente",
+    "corruption": "Anticorrupção",
+    "technology": "Tecnologia",
+    "social": "Inclusão Social"
+  },
+  "footer": {
+    "text": "AI for President — Um projeto open source por um mundo melhor",
+    "disclaimer": "As propostas são geradas por IA para fins educacionais e de reflexão cidadã."
+  }
+}
