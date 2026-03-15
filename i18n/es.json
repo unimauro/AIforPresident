@@ -45,6 +45,10 @@
     "technology": "Tecnología",
     "social": "Inclusión Social"
   },
+  "pdf": {
+    "download": "Descargar Propuestas en PDF",
+    "generating": "Generando..."
+  },
   "search": {
     "placeholder": "Buscar países...",
     "no_results": "No se encontraron países",

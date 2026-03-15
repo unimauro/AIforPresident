@@ -25,6 +25,10 @@
     "detected": "Parece que você está em",
     "cta": "Ver painel"
   },
+  "pdf": {
+    "download": "Baixar Propostas em PDF",
+    "generating": "Gerando..."
+  },
   "search": {
     "placeholder": "Buscar países...",
     "no_results": "Nenhum país encontrado",

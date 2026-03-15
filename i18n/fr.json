@@ -25,6 +25,10 @@
     "detected": "Il semble que vous êtes en",
     "cta": "Voir le tableau de bord"
   },
+  "pdf": {
+    "download": "Télécharger les propositions en PDF",
+    "generating": "Génération..."
+  },
   "search": {
     "placeholder": "Rechercher des pays...",
     "no_results": "Aucun pays trouvé",

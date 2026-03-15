@@ -225,6 +225,23 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   Dashboard.init();
 
+  // PDF download
+  const pdfBtn = document.getElementById('download-pdf');
+  if (pdfBtn) {
+    pdfBtn.addEventListener('click', async () => {
+      const originalText = pdfBtn.innerHTML;
+      pdfBtn.innerHTML = '⏳ <span data-i18n="pdf.generating">' + (I18n.locale === 'en' ? 'Generating...' : 'Generando...') + '</span>';
+      pdfBtn.disabled = true;
+      try {
+        await PDFGenerator.generate();
+      } catch (e) {
+        console.error('PDF error:', e);
+      }
+      pdfBtn.innerHTML = originalText;
+      pdfBtn.disabled = false;
+    });
+  }
+
   // Hamburger
   const toggle = document.getElementById('nav-toggle');
   const links = document.getElementById('nav-links');

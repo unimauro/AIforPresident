@@ -11,6 +11,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
   <link rel="stylesheet" href="../css/main.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js"></script>
 </head>
 <body>
 
@@ -37,6 +38,9 @@
   <section class="hero">
     <h1>🇵🇪 <span data-i18n="peru.title">Presidente IA para Perú</span></h1>
     <p data-i18n="peru.subtitle">Propuestas ideales y análisis electoral 2026</p>
+    <button class="btn btn-primary" id="download-pdf" style="margin-top:1rem">
+      📄 <span data-i18n="pdf.download">Descargar Propuestas en PDF</span>
+    </button>
   </section>
 
   <div class="container">
@@ -98,6 +102,7 @@
   </footer>
 
   <script src="../js/i18n.js"></script>
+  <script src="../js/pdf-generator.js"></script>
   <script src="../js/dashboard.js"></script>
 </body>
 </html>
