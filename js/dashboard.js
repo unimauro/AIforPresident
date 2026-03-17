@@ -155,17 +155,21 @@ const Dashboard = {
       const position = c.position ? `<span style="color:var(--text-secondary);font-size:0.75rem">#${c.position}</span> ` : '';
       const planLink = c.plan_url ? `<a href="${c.plan_url}" target="_blank" rel="noopener" style="font-size:0.8rem; display:inline-block; margin-top:0.5rem;">📄 ${isEn ? 'Government Plan' : 'Plan de Gobierno'}</a>` : '';
 
-      const logoImg = c.logo
-        ? `<div class="candidate-logo"><img src="${c.logo}" alt="${c.party}"></div>`
-        : `<div class="candidate-logo candidate-logo-emoji">${c.symbol || '🤖'}</div>`;
+      const hasImages = c.logo_local && c.photo;
+      const mediaHtml = hasImages
+        ? `<div class="candidate-media">
+             <img src="${c.logo_local}" alt="${c.party}" class="candidate-party-logo">
+             <img src="${c.photo}" alt="${c.name}" class="candidate-photo">
+           </div>`
+        : `<div class="candidate-media candidate-media-emoji"><span>${c.symbol || '🤖'}</span></div>`;
       return `
         <div class="card" style="border-left: 3px solid ${c.color}" data-search="${(c.name + ' ' + c.party).toLowerCase()}">
           <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:0.5rem">
-            <div>
+            <div style="flex:1">
               <div class="card-title" style="color:${c.color}">${position}${c.name}</div>
               <div class="card-subtitle">${c.party}</div>
             </div>
-            ${logoImg}
+            ${mediaHtml}
           </div>
           <ul style="margin-top:0.5rem; padding-left:1.2rem; color:var(--text-secondary); font-size:0.82rem;">
             ${c.key_proposals.map(p => `<li>${p}</li>`).join('')}

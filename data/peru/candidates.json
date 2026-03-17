@@ -23,7 +23,9 @@
       "science": 3
     },
     "symbol": "✊",
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/33RZSZPI25CJJFGLWBUZ3EEIQ4.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/33RZSZPI25CJJFGLWBUZ3EEIQ4.png",
+    "logo_local": "../assets/parties/ronald-atencio.png",
+    "photo": "../assets/candidates/ronald-atencio.png"
   },
   {
     "name": "Herbert Caller",
@@ -49,7 +51,9 @@
       "social": 5,
       "science": 2
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/5PTPS6O6VREADO35EQVDFSLTWI.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/5PTPS6O6VREADO35EQVDFSLTWI.png",
+    "logo_local": "../assets/parties/herbert-caller.png",
+    "photo": "../assets/candidates/herbert-caller.png"
   },
   {
     "name": "Ricardo Belmont",
@@ -75,7 +79,9 @@
       "social": 4,
       "science": 2
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/ATP7PF3UAZA4FNIQXZE5A3TQPU.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/ATP7PF3UAZA4FNIQXZE5A3TQPU.png",
+    "logo_local": "../assets/parties/ricardo-belmont.png",
+    "photo": "../assets/candidates/ricardo-belmont.png"
   },
   {
     "name": "Alex Gonzáles",
@@ -101,7 +107,9 @@
       "social": 5,
       "science": 4
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/T5BJE772MVDT5GGGKH2PJDDWIM.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/T5BJE772MVDT5GGGKH2PJDDWIM.png",
+    "logo_local": "../assets/parties/alex-gonzales.png",
+    "photo": "../assets/candidates/alex-gonzales.png"
   },
   {
     "name": "Jorge Nieto",
@@ -127,7 +135,9 @@
       "social": 4,
       "science": 4
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/S5VWW74KYBFM5B3IPJTPAOH3O4.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/S5VWW74KYBFM5B3IPJTPAOH3O4.png",
+    "logo_local": "../assets/parties/jorge-nieto.png",
+    "photo": "../assets/candidates/jorge-nieto.png"
   },
   {
     "name": "Francisco Diez-Canseco",
@@ -153,7 +163,9 @@
       "social": 3,
       "science": 3
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/U56GYZ3HSFD4JEVGKTF2FB3HJ4.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/U56GYZ3HSFD4JEVGKTF2FB3HJ4.png",
+    "logo_local": "../assets/parties/francisco-diez-canseco.png",
+    "photo": "../assets/candidates/francisco-diez-canseco.png"
   },
   {
     "name": "Walter Chirinos",
@@ -179,7 +191,9 @@
       "social": 5,
       "science": 3
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/IYGSNN4XONGRZHCXQPWQLTK5RE.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/IYGSNN4XONGRZHCXQPWQLTK5RE.png",
+    "logo_local": "../assets/parties/walter-chirinos.png",
+    "photo": "../assets/candidates/walter-chirinos.png"
   },
   {
     "name": "Paul Davis Jaimes",
@@ -205,7 +219,9 @@
       "social": 4,
       "science": 4
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/FYPTHWZJXNGLLHNLOYBXK7YYRU.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/FYPTHWZJXNGLLHNLOYBXK7YYRU.png",
+    "logo_local": "../assets/parties/paul-davis-jaimes.png",
+    "photo": "../assets/candidates/paul-davis-jaimes.png"
   },
   {
     "name": "Carlos Espá",
@@ -231,7 +247,9 @@
       "social": 4,
       "science": 2
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/NXMKTPKQRBBX3FJBDGDOKZMA24.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/NXMKTPKQRBBX3FJBDGDOKZMA24.png",
+    "logo_local": "../assets/parties/carlos-espa.png",
+    "photo": "../assets/candidates/carlos-espa.png"
   },
   {
     "name": "Carlos Álvarez",
@@ -257,7 +275,9 @@
       "science": 4
     },
     "symbol": "🤝",
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/MJGVTSBCYZA6BJOASHUNE3CPNY.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/MJGVTSBCYZA6BJOASHUNE3CPNY.png",
+    "logo_local": "../assets/parties/carlos-alvarez.png",
+    "photo": "../assets/candidates/carlos-alvarez.png"
   },
   {
     "name": "Fernando Olivera",
@@ -283,7 +303,9 @@
       "social": 4,
       "science": 3
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/SOO6UZPAJNGCXGD4XE7LCZUU6Q.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/SOO6UZPAJNGCXGD4XE7LCZUU6Q.png",
+    "logo_local": "../assets/parties/fernando-olivera.png",
+    "photo": "../assets/candidates/fernando-olivera.png"
   },
   {
     "name": "Vladimir Cerrón",
@@ -309,7 +331,9 @@
       "social": 6,
       "science": 4
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/JVLASCWMBNBFBBEFKWRVOEYDNE.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/JVLASCWMBNBFBBEFKWRVOEYDNE.png",
+    "logo_local": "../assets/parties/vladimir-cerron.png",
+    "photo": "../assets/candidates/vladimir-cerron.png"
   },
   {
     "name": "Marisol Pérez Tello",
@@ -335,7 +359,9 @@
       "social": 6,
       "science": 4
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/UEROFEP44NHHVOYG4SEAREBL74.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/UEROFEP44NHHVOYG4SEAREBL74.png",
+    "logo_local": "../assets/parties/marisol-perez-tello.png",
+    "photo": "../assets/candidates/marisol-perez-tello.png"
   },
   {
     "name": "Roberto Sánchez",
@@ -361,7 +387,9 @@
       "science": 3
     },
     "symbol": "🟠",
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/2DCIYP5B3JEGDGY3TZW4IBX3SA.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/2DCIYP5B3JEGDGY3TZW4IBX3SA.png",
+    "logo_local": "../assets/parties/roberto-sanchez.png",
+    "photo": "../assets/candidates/roberto-sanchez.png"
   },
   {
     "name": "José Luna Gálvez",
@@ -387,7 +415,9 @@
       "social": 4,
       "science": 3
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/OBPOGWKCANDBTBFEOMPQ5DKDGU.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/OBPOGWKCANDBTBFEOMPQ5DKDGU.png",
+    "logo_local": "../assets/parties/jose-luna-galvez.png",
+    "photo": "../assets/candidates/jose-luna-galvez.png"
   },
   {
     "name": "Armando Massé",
@@ -413,7 +443,9 @@
       "social": 5,
       "science": 3
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/AQNYPPWOABDTDBEMKETHNSLAYY.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/AQNYPPWOABDTDBEMKETHNSLAYY.png",
+    "logo_local": "../assets/parties/armando-masse.png",
+    "photo": "../assets/candidates/armando-masse.png"
   },
   {
     "name": "Álvaro Paz de la Barra",
@@ -439,7 +471,9 @@
       "social": 4,
       "science": 2
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/OH3BU6SQRRHPNHDFNUSXBPZMGU.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/OH3BU6SQRRHPNHDFNUSXBPZMGU.png",
+    "logo_local": "../assets/parties/alvaro-paz-de-la-barra.png",
+    "photo": "../assets/candidates/alvaro-paz-de-la-barra.png"
   },
   {
     "name": "Wolfgang Grozo",
@@ -465,7 +499,9 @@
       "science": 5
     },
     "symbol": "💜",
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/36X5EA2MJREMHFR6OFQAC3FI3I.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/36X5EA2MJREMHFR6OFQAC3FI3I.png",
+    "logo_local": "../assets/parties/wolfgang-grozo.png",
+    "photo": "../assets/candidates/wolfgang-grozo.png"
   },
   {
     "name": "Keiko Fujimori",
@@ -491,7 +527,9 @@
       "science": 2
     },
     "symbol": "🟠",
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/F7FXG6ZWDFB77D6TDWFUMRBTY4.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/F7FXG6ZWDFB77D6TDWFUMRBTY4.png",
+    "logo_local": "../assets/parties/keiko-fujimori.png",
+    "photo": "../assets/candidates/keiko-fujimori.png"
   },
   {
     "name": "César Acuña",
@@ -517,7 +555,9 @@
       "science": 3
     },
     "symbol": "🟢",
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/UF7B4MPXV5BGBBG2QG6SHAOHAM.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/UF7B4MPXV5BGBBG2QG6SHAOHAM.png",
+    "logo_local": "../assets/parties/cesar-acuña.png",
+    "photo": "../assets/candidates/cesar-acuña.png"
   },
   {
     "name": "Yonhy Lescano",
@@ -543,7 +583,9 @@
       "social": 6,
       "science": 3
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/ZIIFZYG7GZB6BDOHXRXQJGUUQI.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/ZIIFZYG7GZB6BDOHXRXQJGUUQI.png",
+    "logo_local": "../assets/parties/yonhy-lescano.png",
+    "photo": "../assets/candidates/yonhy-lescano.png"
   },
   {
     "name": "Alfonso López Chau",
@@ -569,7 +611,9 @@
       "science": 4
     },
     "symbol": "🔴",
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/R6SORIKD2FD7VM25UVO6X6AMVM.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/R6SORIKD2FD7VM25UVO6X6AMVM.png",
+    "logo_local": "../assets/parties/alfonso-lopez-chau.png",
+    "photo": "../assets/candidates/alfonso-lopez-chau.png"
   },
   {
     "name": "Rafael Belaunde",
@@ -595,7 +639,9 @@
       "social": 3,
       "science": 3
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/7JJXREOIFBANRDVQ6GFGWHFMAE.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/7JJXREOIFBANRDVQ6GFGWHFMAE.png",
+    "logo_local": "../assets/parties/rafael-belaunde.png",
+    "photo": "../assets/candidates/rafael-belaunde.png"
   },
   {
     "name": "Rosario Fernández",
@@ -621,7 +667,9 @@
       "social": 5,
       "science": 3
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/QQ5DPVE3ORF47LPH5E5K6VG5SY.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/QQ5DPVE3ORF47LPH5E5K6VG5SY.png",
+    "logo_local": "../assets/parties/rosario-fernandez.png",
+    "photo": "../assets/candidates/rosario-fernandez.png"
   },
   {
     "name": "José Williams",
@@ -647,7 +695,9 @@
       "social": 3,
       "science": 3
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/O7R3ECLIJVF73DD5S5NH3Y4P6E.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/O7R3ECLIJVF73DD5S5NH3Y4P6E.png",
+    "logo_local": "../assets/parties/jose-williams.png",
+    "photo": "../assets/candidates/jose-williams.png"
   },
   {
     "name": "Carlos Jaico",
@@ -673,7 +723,9 @@
       "social": 4,
       "science": 4
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/34ZYE77AWJHWNI4QT3RZP4LDOY.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/34ZYE77AWJHWNI4QT3RZP4LDOY.png",
+    "logo_local": "../assets/parties/carlos-jaico.png",
+    "photo": "../assets/candidates/carlos-jaico.png"
   },
   {
     "name": "Mario Vizcarra",
@@ -699,7 +751,9 @@
       "social": 5,
       "science": 4
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/VTVERPQTKRGWTML6KDMFKG4JMA.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/VTVERPQTKRGWTML6KDMFKG4JMA.png",
+    "logo_local": "../assets/parties/mario-vizcarra.png",
+    "photo": "../assets/candidates/mario-vizcarra.png"
   },
   {
     "name": "Antonio Ortiz",
@@ -725,7 +779,9 @@
       "social": 5,
       "science": 3
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/Y6QMTZHMVVHLZPVWDEUAGVVNEA.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/Y6QMTZHMVVHLZPVWDEUAGVVNEA.png",
+    "logo_local": "../assets/parties/antonio-ortiz.png",
+    "photo": "../assets/candidates/antonio-ortiz.png"
   },
   {
     "name": "George Forsyth",
@@ -751,7 +807,9 @@
       "science": 3
     },
     "symbol": "❤️",
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/YM5MQTI3ERFPRNXNG7SXMXJJU4.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/YM5MQTI3ERFPRNXNG7SXMXJJU4.png",
+    "logo_local": "../assets/parties/george-forsyth.png",
+    "photo": "../assets/candidates/george-forsyth.png"
   },
   {
     "name": "Enrique Valderrama",
@@ -777,7 +835,9 @@
       "social": 5,
       "science": 3
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/S65ANARPC5A7NOKOWLLQJ2SWXU.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/S65ANARPC5A7NOKOWLLQJ2SWXU.png",
+    "logo_local": "../assets/parties/enrique-valderrama.png",
+    "photo": "../assets/candidates/enrique-valderrama.png"
   },
   {
     "name": "Rafael López Aliaga",
@@ -803,7 +863,9 @@
       "science": 2
     },
     "symbol": "🔵",
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/3G6KJJMAG5BRDF3EIV5LQX2UHA.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/3G6KJJMAG5BRDF3EIV5LQX2UHA.png",
+    "logo_local": "../assets/parties/rafael-lopez-aliaga.png",
+    "photo": "../assets/candidates/rafael-lopez-aliaga.png"
   },
   {
     "name": "Charlie Carrasco",
@@ -829,7 +891,9 @@
       "social": 5,
       "science": 3
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/NUEUZEXRP5HZHOD3Z2ACC4I2ZA.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/NUEUZEXRP5HZHOD3Z2ACC4I2ZA.png",
+    "logo_local": "../assets/parties/charlie-carrasco.png",
+    "photo": "../assets/candidates/charlie-carrasco.png"
   },
   {
     "name": "Fiorella Molinelli",
@@ -855,7 +919,9 @@
       "social": 5,
       "science": 4
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/VKSGDWGUF5AGRBC7MZNIC2BDNA.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/VKSGDWGUF5AGRBC7MZNIC2BDNA.png",
+    "logo_local": "../assets/parties/fiorella-molinelli.png",
+    "photo": "../assets/candidates/fiorella-molinelli.png"
   },
   {
     "name": "Napoleón Becerra",
@@ -881,7 +947,9 @@
       "social": 6,
       "science": 2
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/SGESEBQIWJGIBDAWA7LBXINOM4.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/SGESEBQIWJGIBDAWA7LBXINOM4.png",
+    "logo_local": "../assets/parties/napoleon-becerra.png",
+    "photo": "../assets/candidates/napoleon-becerra.png"
   },
   {
     "name": "Roberto Chiabra",
@@ -907,7 +975,9 @@
       "social": 3,
       "science": 3
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/THUTCX47PBCIDCWJRFRYLQNPWQ.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/THUTCX47PBCIDCWJRFRYLQNPWQ.png",
+    "logo_local": "../assets/parties/roberto-chiabra.png",
+    "photo": "../assets/candidates/roberto-chiabra.png"
   },
   {
     "name": "Mesías Guevara",
@@ -933,7 +1003,9 @@
       "social": 5,
       "science": 5
     },
-    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/SVBPNWJIZFFZDKHISAJNZKTNBI.png"
+    "logo": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/SVBPNWJIZFFZDKHISAJNZKTNBI.png",
+    "logo_local": "../assets/parties/mesias-guevara.png",
+    "photo": "../assets/candidates/mesias-guevara.png"
   },
   {
     "name": "Presidente IA",
