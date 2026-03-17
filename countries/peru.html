@@ -100,9 +100,22 @@
       <div id="candidates-grid" class="grid-3"></div>
     </section>
 
-    <!-- News & Videos -->
+    <!-- Interviews Slider -->
+    <section id="interviews" class="section">
+      <h2 class="section-title">🎥 Entrevistas a Candidatos — "Tu Decisión 2026"</h2>
+      <p style="color:var(--text-secondary); margin-bottom:1rem; font-size:0.85rem;">
+        Programa de <a href="https://www.tvperu.gob.pe" target="_blank">TVPerú</a> · Lunes a Viernes 9pm · Haz click para ver la entrevista completa
+      </p>
+      <div class="slider-container">
+        <button class="slider-btn slider-prev" onclick="slideInterviews(-1)" aria-label="Anterior">&#10094;</button>
+        <div class="slider-track" id="interviews-track"></div>
+        <button class="slider-btn slider-next" onclick="slideInterviews(1)" aria-label="Siguiente">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- News & Debates -->
     <section id="news" class="section">
-      <h2 class="section-title">📰 Noticias y Debates Electorales</h2>
+      <h2 class="section-title">📰 Debates y Análisis Electoral</h2>
       <div id="news-grid" class="news-grid"></div>
     </section>
 
@@ -122,7 +135,14 @@
       <a href="https://eg2026.onpe.gob.pe/">ONPE</a> ·
       <a href="https://votoinformado.jne.gob.pe">Voto Informado</a>
     </p>
-    <p style="margin-top:1rem;"><a href="https://github.com/unimauro/AIforPresident">GitHub</a></p>
+    <p style="margin-top:1rem;">
+      <a href="https://github.com/unimauro/AIforPresident">GitHub</a>
+    </p>
+    <p style="margin-top:0.75rem;">
+      <a href="https://buymeacoffee.com/unimauro" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.4rem;background:#FFDD00;color:#000;padding:0.4rem 1rem;border-radius:8px;font-size:0.8rem;font-weight:600;text-decoration:none;transition:opacity 0.2s;">
+        ☕ Buy me a coffee
+      </a>
+    </p>
   </footer>
 
   <script src="../js/i18n.js"></script>

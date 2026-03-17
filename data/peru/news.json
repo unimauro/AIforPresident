@@ -1,50 +1,33 @@
 {
   "ticker": [
     { "text": "🗳️ Elecciones 2026: 12 de abril — 36 candidatos oficiales inscritos ante el JNE", "url": "https://portal.jne.gob.pe/portal/Pagina/Ver/979/page/Elecciones-Generales-2026" },
-    { "text": "📊 Encuesta Datum Mar 2026: Keiko 10.7%, López Aliaga 10%, López Chau 5.5%", "url": "https://www.infobae.com/peru/2026/03/09/keiko-fujimori-supera-a-rafael-lopez-aliaga-en-encuesta/" },
-    { "text": "📈 Wolfgang Grozo sube al 4.2% — fuerte presencia en redes entre jóvenes de 18-25 años", "url": "https://www.infobae.com/peru/2026/03/07/nueva-encuesta-de-cpi-confirma-tercer-lugar-de-alfonso-lopez-chau-y-aparicion-de-wolfgang-grozo/" },
+    { "text": "📊 Encuesta Mar 2026: López Aliaga 11.4%, Keiko 10.9%, López Chau 6.5%, Grozo 5.1%", "url": "https://www.infobae.com/peru/2026/03/16/elecciones-2026-keiko-fujimori-vuelve-al-segundo-lugar-y-wolfgang-grozo-sigue-subiendo-en-las-preferencias-segun-encuesta/" },
+    { "text": "📈 Wolfgang Grozo sube al 5.1% — fuerte presencia en redes entre jóvenes de 18-25 años", "url": "https://www.infobae.com/peru/2026/03/07/nueva-encuesta-de-cpi-confirma-tercer-lugar-de-alfonso-lopez-chau-y-aparicion-de-wolfgang-grozo/" },
     { "text": "🎤 Debates Presidenciales JNE: 23-25 marzo y 30 marzo - 1 abril, 8pm, Centro de Convenciones Lima", "url": "https://rpp.pe/politica/elecciones/asi-sera-el-debate-presidencial-2026-fechas-reglas-y-organizacion-noticia-1677151" },
-    { "text": "📋 ONPE inició impresión de cédulas de votación — 5 columnas, sin nombres de candidatos", "url": "https://eg2026.onpe.gob.pe/cedula/cedula-de-sufragio/" },
-    { "text": "🔴 Keiko y López Aliaga sufren caída en intención de voto mientras López Chau y Grozo suben", "url": "https://larepublica.pe/politica/2026/03/13/encuestas-presidenciales-2026-keiko-fujimori-y-rla-experimentan-caida-en-intencion-de-voto/" },
+    { "text": "📋 ONPE inició impresión de cédulas — 5 columnas, sin nombres de candidatos, solo símbolo y foto", "url": "https://eg2026.onpe.gob.pe/cedula/cedula-de-sufragio/" },
+    { "text": "🔴 Keiko y López Aliaga sufren caída mientras López Chau y Grozo suben en intención de voto", "url": "https://larepublica.pe/politica/2026/03/13/encuestas-presidenciales-2026-keiko-fujimori-y-rla-experimentan-caida-en-intencion-de-voto/" },
     { "text": "🏛️ Más de 20 candidatos exponen propuestas en Foro Electoral SNI con apoyo de El Comercio", "url": "https://elcomercio.pe/politica/elecciones-2026-en-vivo-foro-candidatos-presidenciales/" },
-    { "text": "⚠️ 23% votaría blanco/viciado y 15.5% aún no decide — más de un tercio del electorado en disputa", "url": "https://elbuho.pe/2026/03/elecciones-2026-asi-va-la-intencion-de-voto-para-la-presidencia-del-pais-segun-tres-encuestadoras/" }
+    { "text": "⚠️ 23% votaría blanco/viciado y 15.5% aún no decide — más de un tercio del electorado en disputa", "url": "https://elbuho.pe/2026/03/elecciones-2026-asi-va-la-intencion-de-voto-para-la-presidencia-del-pais-segun-tres-encuestadoras/" },
+    { "text": "📺 'Tu Decisión 2026' de TVPerú: entrevistas a los 36 candidatos presidenciales, lunes a viernes 9pm", "url": "https://www.tvperu.gob.pe/noticias/politica/candidatos-a-vicepresidencias-estaran-en-tu-decision-2026" }
+  ],
+  "interviews": [
+    { "candidate": "Keiko Fujimori", "party": "Fuerza Popular", "program": "Tu Decisión 2026", "source": "TVPerú", "url": "https://www.tvperu.gob.pe/noticias/politica/tu-decision-2026-planes-de-gobierno-de-keiko-fujimori", "color": "#FF6B35" },
+    { "candidate": "Rafael López Aliaga", "party": "Renovación Popular", "program": "Tu Decisión 2026", "source": "TVPerú", "url": "https://www.tvperu.gob.pe/noticias/politica/tu-decision-2026-planes-de-gobierno-de-rafael-lopez-aliaga", "color": "#1E3A5F" },
+    { "candidate": "Alfonso López Chau", "party": "Ahora Nación", "program": "Tu Decisión 2026", "source": "TVPerú", "url": "https://www.tvperu.gob.pe/noticias/politica/tu-decision-2026-planes-de-gobierno-de-alfonso-lopez-chau", "color": "#8B0000" },
+    { "candidate": "César Acuña", "party": "Alianza Para el Progreso", "program": "Tu Decisión 2026", "source": "TVPerú", "url": "https://www.tvperu.gob.pe/noticias/politica/tu-decision-2026-planes-de-gobierno-de-cesar-acuna-del-partido-alianza-para-el-progreso", "color": "#00A651" },
+    { "candidate": "Wolfgang Grozo", "party": "Integridad Democrática", "program": "Tu Decisión 2026", "source": "TVPerú", "url": "https://www.tvperu.gob.pe/noticias/politica/tu-decision-2026-planes-de-gobierno-de-wolfgang-grozo", "color": "#6A0DAD" },
+    { "candidate": "Carlos Álvarez", "party": "País Para Todos", "program": "Tu Decisión 2026", "source": "TVPerú", "url": "https://www.tvperu.gob.pe/noticias/politica/tu-decision-2026-planes-de-gobierno-de-carlos-alvarez", "color": "#96CEB4" },
+    { "candidate": "George Forsyth", "party": "Somos Perú", "program": "Tu Decisión 2026", "source": "TVPerú", "url": "https://www.tvperu.gob.pe/noticias/politica/tu-decision-2026-planes-de-gobierno-de-george-forsyth", "color": "#E31937" },
+    { "candidate": "Álvaro Paz de la Barra", "party": "Fe en el Perú", "program": "Tu Decisión 2026", "source": "TVPerú", "url": "https://www.tvperu.gob.pe/noticias/politica/tu-decision-2026-planes-de-gobierno-de-alvaro-paz-de-la-barra-del-partido-fe-en-el-peru", "color": "#D35400" },
+    { "candidate": "Marisol Pérez Tello", "party": "Primero La Gente", "program": "Análisis electoral", "source": "La República", "url": "https://larepublica.pe/politica/2026/03/16/elecciones-2026-los-aciertos-dudas-y-errores-de-lopez-aliaga-perez-tello-forsyth-y-belmont-hnews-1305648", "color": "#9B59B6" },
+    { "candidate": "Ricardo Belmont", "party": "Partido Cívico Obras", "program": "Análisis electoral", "source": "La República", "url": "https://larepublica.pe/politica/2026/03/16/elecciones-2026-los-aciertos-dudas-y-errores-de-lopez-aliaga-perez-tello-forsyth-y-belmont-hnews-1305648", "color": "#F39C12" },
+    { "candidate": "Roberto Sánchez", "party": "Juntos por el Perú", "program": "Tu Decisión 2026", "source": "TVPerú", "url": "https://www.tvperu.gob.pe/noticias/politica/tu-decision-2026-planes-de-gobierno-de-roberto-sanchez", "color": "#E67E22" },
+    { "candidate": "Mesías Guevara", "party": "Partido Morado", "program": "Tu Decisión 2026", "source": "TVPerú", "url": "https://www.tvperu.gob.pe/noticias/politica/tu-decision-2026-candidatos-vicepresidenciales-de-los-partidos-del-buen-gobierno-y-morado-presentan-sus-propuestas", "color": "#7D3C98" }
   ],
   "videos": [
-    {
-      "title": "Debate Presidencial 2026 — Bloque 1: Seguridad y Anticorrupción",
-      "description": "Primer debate oficial JNE con 12 candidatos. Temas: seguridad ciudadana y lucha contra la corrupción.",
-      "date": "2026-03-23",
-      "source": "JNE Media / TV Perú",
-      "youtube_id": null,
-      "url": "https://rpp.pe/politica/elecciones/asi-sera-el-debate-presidencial-2026-fechas-reglas-y-organizacion-noticia-1677151",
-      "type": "debate"
-    },
-    {
-      "title": "Foro Electoral SNI — Candidatos exponen propuestas económicas",
-      "description": "Más de 20 candidatos presentan sus planes de gobierno en foro organizado por la SNI con apoyo de El Comercio.",
-      "date": "2026-03-12",
-      "source": "El Comercio",
-      "youtube_id": null,
-      "url": "https://elcomercio.pe/politica/elecciones-2026-en-vivo-foro-candidatos-presidenciales/",
-      "type": "foro"
-    },
-    {
-      "title": "Lo bueno, lo malo y lo peor de seis candidatos presidenciales",
-      "description": "Análisis detallado de las propuestas de los principales candidatos presidenciales 2026.",
-      "date": "2026-03-16",
-      "source": "La República",
-      "youtube_id": null,
-      "url": "https://larepublica.pe/politica/2026/03/16/elecciones-2026-lo-bueno-lo-malo-y-lo-peor-de-seis-candidatos-presidenciales-hnews-198450",
-      "type": "analisis"
-    },
-    {
-      "title": "Debate Presidencial 2026 — Bloque 2: Empleo y Educación",
-      "description": "Segundo ciclo de debates JNE. Temas: empleo, desarrollo, emprendimiento, educación, innovación y tecnología.",
-      "date": "2026-03-30",
-      "source": "JNE Media / TV Perú",
-      "youtube_id": null,
-      "url": "https://www.infobae.com/peru/2026/02/23/debate-presidencial-2026-temas-y-el-orden-de-los-candidatos-que-se-enfrentaran-el-30-y-31-de-marzo-y-1-de-abril/",
-      "type": "debate"
-    }
+    { "title": "Debate Presidencial 2026 — Bloque 1: Seguridad y Anticorrupción", "description": "12 candidatos debaten sobre seguridad ciudadana y lucha contra la corrupción.", "date": "2026-03-23", "source": "JNE / TVPerú", "url": "https://rpp.pe/politica/elecciones/asi-sera-el-debate-presidencial-2026-fechas-reglas-y-organizacion-noticia-1677151", "type": "debate" },
+    { "title": "Debate Presidencial 2026 — Bloque 2: Empleo y Educación", "description": "12 candidatos debaten sobre empleo, desarrollo, educación e innovación.", "date": "2026-03-30", "source": "JNE / TVPerú", "url": "https://www.infobae.com/peru/2026/02/23/debate-presidencial-2026-temas-y-el-orden-de-los-candidatos-que-se-enfrentaran-el-30-y-31-de-marzo-y-1-de-abril/", "type": "debate" },
+    { "title": "Foro Electoral SNI — Propuestas económicas", "description": "Más de 20 candidatos presentan planes de gobierno en la SNI.", "date": "2026-03-12", "source": "El Comercio", "url": "https://elcomercio.pe/politica/elecciones-2026-en-vivo-foro-candidatos-presidenciales/", "type": "foro" },
+    { "title": "Análisis: aciertos y errores de los candidatos", "description": "Análisis detallado de López Aliaga, Pérez Tello, Forsyth y Belmont.", "date": "2026-03-16", "source": "La República", "url": "https://larepublica.pe/politica/2026/03/16/elecciones-2026-los-aciertos-dudas-y-errores-de-lopez-aliaga-perez-tello-forsyth-y-belmont-hnews-1305648", "type": "analisis" }
   ]
 }

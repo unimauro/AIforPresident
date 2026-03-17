@@ -317,11 +317,50 @@ const Dashboard = {
       const items = news.ticker.map(n =>
         `<span class="ticker-item"><a href="${n.url}" target="_blank" rel="noopener">${n.text}</a></span>`
       ).join('');
-      // Duplicate for infinite loop
       tickerTrack.innerHTML = items + items;
     }
 
-    // News cards
+    // Interview slider
+    const interviewsTrack = document.getElementById('interviews-track');
+    if (interviewsTrack && news.interviews) {
+      interviewsTrack.innerHTML = news.interviews.map(iv => `
+        <a href="${iv.url}" target="_blank" rel="noopener" class="slider-slide" style="--slide-accent:${iv.color};text-decoration:none;min-width:280px;max-width:280px">
+          <div class="slide-year" style="background:${iv.color}">🎥 ${iv.program}</div>
+          <div class="slide-title" style="color:${iv.color}">${iv.candidate}</div>
+          <p class="slide-text">${iv.party}</p>
+          <span class="slide-stat">${iv.source} → Ver entrevista</span>
+        </a>
+      `).join('');
+
+      // Slider navigation
+      window.slideInterviews = (dir) => {
+        interviewsTrack.scrollBy({ left: dir * 300, behavior: 'smooth' });
+      };
+
+      // Auto-scroll
+      let autoScroll = setInterval(() => {
+        const maxScroll = interviewsTrack.scrollWidth - interviewsTrack.clientWidth;
+        if (interviewsTrack.scrollLeft >= maxScroll - 10) {
+          interviewsTrack.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          interviewsTrack.scrollBy({ left: 300, behavior: 'smooth' });
+        }
+      }, 4000);
+
+      interviewsTrack.addEventListener('mouseenter', () => clearInterval(autoScroll));
+      interviewsTrack.addEventListener('mouseleave', () => {
+        autoScroll = setInterval(() => {
+          const maxScroll = interviewsTrack.scrollWidth - interviewsTrack.clientWidth;
+          if (interviewsTrack.scrollLeft >= maxScroll - 10) {
+            interviewsTrack.scrollTo({ left: 0, behavior: 'smooth' });
+          } else {
+            interviewsTrack.scrollBy({ left: 300, behavior: 'smooth' });
+          }
+        }, 4000);
+      });
+    }
+
+    // News/debate cards
     const grid = document.getElementById('news-grid');
     if (grid && news.videos) {
       const typeLabels = { debate: '🎤 Debate', foro: '🏛️ Foro', analisis: '📊 Análisis', entrevista: '🎥 Entrevista' };
