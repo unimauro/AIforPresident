@@ -94,6 +94,11 @@ const Dashboard = {
     }
 
     this.renderIssues(issues || []);
+
+    // News
+    this.fetchJSON('news.json').catch(() => null).then(news => {
+      if (news) this.renderNews(news);
+    });
   },
 
   async fetchJSON(file) {
@@ -303,6 +308,45 @@ const Dashboard = {
         </table>
       </div>
     `;
+  },
+
+  renderNews(news) {
+    // Ticker
+    const tickerTrack = document.getElementById('ticker-track');
+    if (tickerTrack && news.ticker) {
+      const items = news.ticker.map(n =>
+        `<span class="ticker-item"><a href="${n.url}" target="_blank" rel="noopener">${n.text}</a></span>`
+      ).join('');
+      // Duplicate for infinite loop
+      tickerTrack.innerHTML = items + items;
+    }
+
+    // News cards
+    const grid = document.getElementById('news-grid');
+    if (grid && news.videos) {
+      const typeLabels = { debate: '🎤 Debate', foro: '🏛️ Foro', analisis: '📊 Análisis', entrevista: '🎥 Entrevista' };
+
+      grid.innerHTML = news.videos.map(v => {
+        const d = new Date(v.date);
+        const dateStr = d.toLocaleDateString('es', { year: 'numeric', month: 'short', day: 'numeric' });
+        const typeClass = `news-type-${v.type}`;
+        const typeLabel = typeLabels[v.type] || v.type;
+        const isPast = d <= new Date();
+        const badge = isPast ? '' : '<span style="color:var(--accent-gold);font-size:0.75rem">📅 Próximamente</span>';
+
+        return `
+          <a href="${v.url}" target="_blank" rel="noopener" class="news-card">
+            <span class="news-card-type ${typeClass}">${typeLabel}</span>
+            <div class="news-card-title">${v.title}</div>
+            <p class="news-card-desc">${v.description}</p>
+            <div class="news-card-meta">
+              <span>${v.source} · ${dateStr}</span>
+              ${badge}
+            </div>
+          </a>
+        `;
+      }).join('');
+    }
   },
 
   pollsChart: null,
