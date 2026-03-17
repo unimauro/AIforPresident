@@ -155,11 +155,13 @@ const Dashboard = {
       const position = c.position ? `<span style="color:var(--text-secondary);font-size:0.75rem">#${c.position}</span> ` : '';
       const planLink = c.plan_url ? `<a href="${c.plan_url}" target="_blank" rel="noopener" style="font-size:0.8rem; display:inline-block; margin-top:0.5rem;">📄 ${isEn ? 'Government Plan' : 'Plan de Gobierno'}</a>` : '';
 
-      const symbol = c.symbol || '🏛️';
+      const logoHtml = c.logo
+        ? `<img src="${c.logo}" alt="${c.party}" style="width:40px;height:40px;border-radius:6px;object-fit:contain;background:#fff;padding:2px;flex-shrink:0">`
+        : `<span style="font-size:1.5rem">${c.symbol || '🤖'}</span>`;
       return `
         <div class="card" style="border-left: 3px solid ${c.color}" data-search="${(c.name + ' ' + c.party).toLowerCase()}">
-          <div style="display:flex;align-items:center;gap:0.5rem">
-            <span style="font-size:1.5rem">${symbol}</span>
+          <div style="display:flex;align-items:center;gap:0.6rem">
+            ${logoHtml}
             <div>
               <div class="card-title" style="color:${c.color}">${position}${c.name}</div>
               <div class="card-subtitle">${c.party}</div>
