@@ -102,7 +102,7 @@ const Dashboard = {
   },
 
   async fetchJSON(file) {
-    const res = await fetch(this.basePath + file);
+    const res = await fetch(this.basePath + file + '?v=' + Date.now());
     return res.json();
   },
 
