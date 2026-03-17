@@ -5,8 +5,8 @@
     { "text": "📈 Wolfgang Grozo sube al 5.1% — fuerte presencia en redes entre jóvenes de 18-25 años", "url": "https://larepublica.pe/politica/2026/02/22/elecciones-2026-wolfgang-grozo-quien-es-el-candidato-presidencial-de-integridad-democratica-hnews-1091728" },
     { "text": "🎤 Debates Presidenciales JNE: 23-25 marzo y 30 marzo - 1 abril, 8pm, Centro de Convenciones Lima", "url": "https://rpp.pe/politica/elecciones/asi-sera-el-debate-presidencial-2026-fechas-reglas-y-organizacion-noticia-1677151" },
     { "text": "📋 ONPE inició impresión de cédulas — 5 columnas, sin nombres de candidatos, solo símbolo y foto", "url": "https://eg2026.onpe.gob.pe/cedula/cedula-de-sufragio/" },
-    { "text": "🔴 Keiko y López Aliaga sufren caída mientras López Chau y Grozo suben en intención de voto", "url": "https://larepublica.pe/politica/2026/03/13/encuestas-presidenciales-2026-keiko-fujimori-y-rla-experimentan-caida-en-intencion-de-voto/" },
-    { "text": "🏛️ Más de 20 candidatos exponen propuestas en Foro Electoral SNI con apoyo de El Comercio", "url": "https://elcomercio.pe/politica/elecciones-2026-en-vivo-foro-candidatos-presidenciales/" },
+    { "text": "🔴 Keiko y López Aliaga sufren caída mientras López Chau y Grozo suben en intención de voto", "url": "https://www.infobae.com/peru/2026/03/16/elecciones-2026-keiko-fujimori-vuelve-al-segundo-lugar-y-wolfgang-grozo-sigue-subiendo-en-las-preferencias-segun-encuesta/" },
+    { "text": "🏛️ Más de 20 candidatos exponen propuestas en Foro Electoral SNI con apoyo de El Comercio", "url": "https://gestion.pe/peru/politica/elecciones-2026-candidatos-presidenciales-expondran-propuestas-en-foro-de-grupo-el-comercio-y-la-sni-noticia/" },
     { "text": "⚠️ 23% votaría blanco/viciado y 15.5% aún no decide — más de un tercio del electorado en disputa", "url": "https://elbuho.pe/2026/03/elecciones-2026-asi-va-la-intencion-de-voto-para-la-presidencia-del-pais-segun-tres-encuestadoras/" },
     { "text": "📺 'Tu Decisión 2026' de TVPerú: entrevistas a los 36 candidatos, lunes a viernes 9pm", "url": "https://www.tvperu.gob.pe/noticias/politica/candidatos-a-vicepresidencias-estaran-en-tu-decision-2026" }
   ],
@@ -27,7 +27,7 @@
   "videos": [
     { "title": "Debate Presidencial 2026 — Seguridad y Anticorrupción", "description": "12 candidatos debaten sobre seguridad ciudadana y lucha contra la corrupción.", "date": "2026-03-23", "source": "JNE / TVPerú", "url": "https://rpp.pe/politica/elecciones/asi-sera-el-debate-presidencial-2026-fechas-reglas-y-organizacion-noticia-1677151", "type": "debate" },
     { "title": "Debate Presidencial 2026 — Empleo y Educación", "description": "12 candidatos debaten sobre empleo, desarrollo, educación e innovación.", "date": "2026-03-30", "source": "JNE / TVPerú", "url": "https://www.infobae.com/peru/2026/02/23/debate-presidencial-2026-temas-y-el-orden-de-los-candidatos-que-se-enfrentaran-el-30-y-31-de-marzo-y-1-de-abril/", "type": "debate" },
-    { "title": "Foro Electoral SNI — Propuestas económicas", "description": "20+ candidatos presentan planes de gobierno en la SNI.", "date": "2026-03-12", "source": "El Comercio", "url": "https://elcomercio.pe/politica/elecciones-2026-en-vivo-foro-candidatos-presidenciales/", "type": "foro" },
+    { "title": "Foro Electoral SNI — Propuestas económicas", "description": "20+ candidatos presentan planes de gobierno en la SNI.", "date": "2026-03-17", "source": "Gestión / SNI", "url": "https://gestion.pe/peru/politica/elecciones-2026-candidatos-presidenciales-expondran-propuestas-en-foro-de-grupo-el-comercio-y-la-sni-noticia/", "type": "foro" },
     { "title": "Aciertos y errores de los candidatos", "description": "Análisis de López Aliaga, Pérez Tello, Forsyth y Belmont.", "date": "2026-03-16", "source": "La República", "url": "https://larepublica.pe/politica/2026/03/16/elecciones-2026-los-aciertos-dudas-y-errores-de-lopez-aliaga-perez-tello-forsyth-y-belmont-hnews-1305648", "type": "analisis" }
   ]
 }
