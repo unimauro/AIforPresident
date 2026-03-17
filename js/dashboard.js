@@ -320,19 +320,23 @@ const Dashboard = {
       tickerTrack.innerHTML = items + items;
     }
 
-    // Interview marquee chips with thumbnails
+    // Interview marquee — links to YouTube search (always fresh results)
     const interviewsTrack = document.getElementById('interviews-track');
     if (interviewsTrack && news.interviews) {
-      const chips = news.interviews.map(iv => `
-        <a href="${iv.url}" target="_blank" rel="noopener" class="interview-chip">
-          <div class="interview-chip-thumb" style="background:${iv.color}">${iv.symbol || '🎤'}</div>
-          <div class="interview-chip-info">
-            <span class="interview-chip-name">${iv.candidate}</span>
-            <span class="interview-chip-party">${iv.party}</span>
-            <span class="interview-chip-source">${iv.source} · ${iv.program}</span>
-          </div>
-        </a>
-      `).join('');
+      const chips = news.interviews.map(iv => {
+        // YouTube search URL filtered by this week for each candidate
+        const ytSearch = `https://www.youtube.com/results?search_query=${encodeURIComponent(iv.candidate + ' elecciones 2026 peru')}&sp=EgIIAw%253D%253D`;
+        return `
+          <a href="${ytSearch}" target="_blank" rel="noopener" class="interview-chip">
+            <div class="interview-chip-thumb" style="background:${iv.color}">${iv.symbol || '🎤'}</div>
+            <div class="interview-chip-info">
+              <span class="interview-chip-name">${iv.candidate}</span>
+              <span class="interview-chip-party">${iv.party}</span>
+              <span class="interview-chip-source">▶ Videos recientes en YouTube</span>
+            </div>
+          </a>
+        `;
+      }).join('');
       interviewsTrack.innerHTML = chips + chips;
     }
 
