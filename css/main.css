@@ -258,31 +258,28 @@ a:hover { text-decoration: underline; }
 
 /* Candidate logo */
 .candidate-logo {
-  width: 54px;
-  height: 40px;
-  border-radius: 6px;
+  width: 80px;
+  border-radius: 8px;
   overflow: hidden;
   flex-shrink: 0;
   background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
 
 .candidate-logo img {
   width: 100%;
   height: auto;
   display: block;
-  transform: scale(1.1);
-  transform-origin: top center;
 }
 
 .candidate-logo-emoji {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   background: var(--bg-secondary);
-  height: 54px;
-  width: 54px;
+  width: 80px;
+  height: 100px;
 }
 
 .card-hidden { display: none; }
