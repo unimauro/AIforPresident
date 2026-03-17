@@ -126,12 +126,15 @@
     <p style="margin-top:1rem;">
       <a href="https://github.com/unimauro/AIforPresident">GitHub</a>
     </p>
-    <p style="margin-top:0.75rem;">
-      <a href="https://buymeacoffee.com/unimauro" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.4rem;background:#FFDD00;color:#000;padding:0.4rem 1rem;border-radius:8px;font-size:0.8rem;font-weight:600;text-decoration:none;transition:opacity 0.2s;">
-        ☕ Buy me a coffee
-      </a>
-    </p>
   </footer>
+
+  <!-- Coffee Button -->
+  <div class="coffee-fab" id="coffee-fab" onclick="this.classList.toggle('expanded')">
+    <span class="coffee-icon">☕</span>
+    <a href="https://buymeacoffee.com/unimauro" target="_blank" rel="noopener" class="coffee-text" onclick="event.stopPropagation()">
+      Apoya este proyecto
+    </a>
+  </div>
 
   <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
 
