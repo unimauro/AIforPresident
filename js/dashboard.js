@@ -320,18 +320,19 @@ const Dashboard = {
       tickerTrack.innerHTML = items + items;
     }
 
-    // Interview marquee chips
+    // Interview marquee chips with thumbnails
     const interviewsTrack = document.getElementById('interviews-track');
     if (interviewsTrack && news.interviews) {
       const chips = news.interviews.map(iv => `
         <a href="${iv.url}" target="_blank" rel="noopener" class="interview-chip">
-          <span class="interview-chip-dot" style="background:${iv.color}"></span>
-          <span class="interview-chip-name">${iv.candidate}</span>
-          <span class="interview-chip-party">${iv.party}</span>
-          <span class="interview-chip-play">▶</span>
+          <div class="interview-chip-thumb" style="background:${iv.color}">${iv.symbol || '🎤'}</div>
+          <div class="interview-chip-info">
+            <span class="interview-chip-name">${iv.candidate}</span>
+            <span class="interview-chip-party">${iv.party}</span>
+            <span class="interview-chip-source">${iv.source} · ${iv.program}</span>
+          </div>
         </a>
       `).join('');
-      // Duplicate for infinite loop
       interviewsTrack.innerHTML = chips + chips;
     }
 
