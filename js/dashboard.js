@@ -95,9 +95,9 @@ const Dashboard = {
 
     this.renderIssues(issues || []);
 
-    // News
+    // News (pass candidates so the marquee can show all of them)
     this.fetchJSON('news.json').catch(() => null).then(news => {
-      if (news) this.renderNews(news);
+      if (news) this.renderNews(news, candidates || []);
     });
   },
 
@@ -316,7 +316,7 @@ const Dashboard = {
     `;
   },
 
-  renderNews(news) {
+  renderNews(news, allCandidates) {
     // Ticker
     const tickerTrack = document.getElementById('ticker-track');
     if (tickerTrack && news.ticker) {
@@ -326,23 +326,36 @@ const Dashboard = {
       tickerTrack.innerHTML = items + items;
     }
 
-    // Interview marquee — links to YouTube search (always fresh results)
+    // Interview marquee — show ALL candidates in random order with YouTube search links
     const interviewsTrack = document.getElementById('interviews-track');
-    if (interviewsTrack && news.interviews) {
-      const chips = news.interviews.map(iv => {
-        // YouTube search URL filtered by this week for each candidate
-        const ytSearch = `https://www.youtube.com/results?search_query=${encodeURIComponent(iv.candidate + ' elecciones 2026 peru')}&sp=EgIIAw%253D%253D`;
+    if (interviewsTrack) {
+      // Build chips from all candidates (shuffled), excluding the IA candidate
+      const realCandidates = (allCandidates || []).filter(c => c.id !== 'ia');
+      // Fisher-Yates shuffle
+      const shuffled = [...realCandidates];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+
+      const chips = shuffled.map(c => {
+        const ytSearch = `https://www.youtube.com/results?search_query=${encodeURIComponent(c.name + ' elecciones 2026 peru')}&sp=EgIIAw%253D%253D`;
+        const hasMedia = c.logo_local && c.photo;
+        const thumbHtml = hasMedia
+          ? `<img src="${c.photo}" alt="${c.name}" class="interview-chip-thumb" style="width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid ${c.color}">`
+          : `<div class="interview-chip-thumb" style="background:${c.color}">${c.symbol || '🤖'}</div>`;
         return `
           <a href="${ytSearch}" target="_blank" rel="noopener" class="interview-chip">
-            <div class="interview-chip-thumb" style="background:${iv.color}">${iv.symbol || '🎤'}</div>
+            ${thumbHtml}
             <div class="interview-chip-info">
-              <span class="interview-chip-name">${iv.candidate}</span>
-              <span class="interview-chip-party">${iv.party}</span>
+              <span class="interview-chip-name">${c.name}</span>
+              <span class="interview-chip-party">${c.party}</span>
               <span class="interview-chip-source">▶ Videos recientes en YouTube</span>
             </div>
           </a>
         `;
       }).join('');
+      // Duplicate for seamless infinite scroll
       interviewsTrack.innerHTML = chips + chips;
     }
 
