@@ -1,4 +1,23 @@
 const PDFGenerator = {
+  // Map emojis to simple text labels for PDF (Helvetica doesn't support emojis)
+  iconMap: {
+    '📚': '[EDU]', '🏥': '[SAL]', '💼': '[ECO]', '🛡️': '[SEG]',
+    '⚖️': '[JUS]', '🌿': '[AMB]', '🚀': '[TEC]', '🤝': '[SOC]',
+    '🔬': '[CIE]', '🔒': '[COR]', '💰': '[FIN]', '🏛️': '[GOB]',
+    '⚠️': '[!]', '🗳️': '[VOT]', '📊': '[EST]', '📈': '[+]',
+    '🎤': '[MIC]', '📋': '[DOC]', '🔴': '[*]', '📺': '[TV]'
+  },
+
+  sanitizeIcon(text) {
+    let result = text;
+    for (const [emoji, label] of Object.entries(this.iconMap)) {
+      result = result.replaceAll(emoji, label);
+    }
+    // Remove any remaining emojis (surrogate pairs and variation selectors)
+    result = result.replace(/[\u{1F000}-\u{1FFFF}]|[\u{2600}-\u{27BF}]|[\u{FE00}-\u{FE0F}]|[\u{200D}]/gu, '');
+    return result;
+  },
+
   async generate() {
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF('p', 'mm', 'a4');
@@ -117,7 +136,8 @@ const PDFGenerator = {
       doc.setFontSize(11);
       doc.setFont('helvetica', 'bold');
       doc.setTextColor(...blue);
-      doc.text(`${p.icon}  ${isEn ? p.title_en : p.title}`, margin + 4, y + 5.5);
+      const pIcon = this.sanitizeIcon(p.icon || '');
+      doc.text(`${pIcon}  ${isEn ? p.title_en : p.title}`, margin + 4, y + 5.5);
       y += 12;
 
       // Description
@@ -130,37 +150,51 @@ const PDFGenerator = {
       y += lines.length * 4.5 + 8;
     });
 
-    // === PAGE 3: CANDIDATE COMPARISON (only if data exists) ===
+    // === PAGE 3: CANDIDATE COMPARISON (only top candidates with poll data) ===
     if (candidates && candidates.length > 0) {
+    // Filter to candidates that have poll_pct (top candidates) + Presidente IA
+    const topCandidates = candidates.filter(c => c.poll_pct > 0 || c.id === 'ia');
+    // If no poll data, take first 10
+    const displayCandidates = topCandidates.length > 2 ? topCandidates : candidates.slice(0, 10);
+    // Limit to max 10 for readability
+    const tableCandidates = displayCandidates.slice(0, 10);
+
     doc.addPage();
     doc.setFillColor(...dark);
     doc.rect(0, 0, pageWidth, 297, 'F');
     y = 20;
 
-    y = this.addSectionTitle(doc, isEn ? 'Candidate Comparison' : 'Comparación de Candidatos', y, blue, white);
+    y = this.addSectionTitle(doc, isEn ? 'Candidate Comparison (Top Candidates)' : 'Comparación de Candidatos (Principales)', y, blue, white);
     y += 5;
 
     const dims = ['education', 'security', 'economy', 'health', 'environment', 'corruption', 'technology', 'social'];
     const dimLabels = dims.map(d => I18n.t(`dimensions.${d}`));
 
+    // Calculate column widths: first column wider for dimension labels
+    const labelColW = 28;
+    const dataColW = (contentWidth - labelColW) / tableCandidates.length;
+
     // Table header
-    const colW = contentWidth / (candidates.length + 1);
     doc.setFillColor(22, 27, 34);
-    doc.rect(margin, y, contentWidth, 8, 'F');
+    doc.rect(margin, y, contentWidth, 10, 'F');
     doc.setFontSize(7);
     doc.setFont('helvetica', 'bold');
     doc.setTextColor(...gray);
-    doc.text(isEn ? 'Dimension' : 'Dimensión', margin + 2, y + 5.5);
-    candidates.forEach((c, i) => {
+    doc.text(isEn ? 'Dimension' : 'Dimension', margin + 2, y + 6);
+    tableCandidates.forEach((c, i) => {
       const hex = c.color;
       const r = parseInt(hex.slice(1, 3), 16);
       const g = parseInt(hex.slice(3, 5), 16);
       const b = parseInt(hex.slice(5, 7), 16);
       doc.setTextColor(r, g, b);
-      const name = c.name.length > 12 ? c.name.substring(0, 11) + '.' : c.name;
-      doc.text(name, margin + colW * (i + 1) + 2, y + 5.5);
+      // Use last name only for space
+      const parts = c.name.split(' ');
+      const shortName = parts.length > 1 ? parts[parts.length - 1] : c.name;
+      const name = shortName.length > 10 ? shortName.substring(0, 9) + '.' : shortName;
+      const x = margin + labelColW + dataColW * i + dataColW / 2;
+      doc.text(name, x, y + 6, { align: 'center' });
     });
-    y += 10;
+    y += 12;
 
     // Table rows
     dims.forEach((d, di) => {
@@ -173,28 +207,29 @@ const PDFGenerator = {
 
       if (di % 2 === 0) {
         doc.setFillColor(28, 33, 40);
-        doc.rect(margin, y - 1, contentWidth, 7, 'F');
+        doc.rect(margin, y - 1, contentWidth, 8, 'F');
       }
 
       doc.setFontSize(8);
       doc.setFont('helvetica', 'normal');
       doc.setTextColor(...white);
-      doc.text(dimLabels[di], margin + 2, y + 4);
+      doc.text(dimLabels[di], margin + 2, y + 5);
 
-      candidates.forEach((c, i) => {
+      tableCandidates.forEach((c, i) => {
         const score = c.scores[d];
         if (score >= 7) doc.setTextColor(...green);
         else if (score >= 5) doc.setTextColor(...gold);
         else doc.setTextColor(...red);
         doc.setFont('helvetica', 'bold');
-        doc.text(`${score}/10`, margin + colW * (i + 1) + 2, y + 4);
+        const x = margin + labelColW + dataColW * i + dataColW / 2;
+        doc.text(`${score}/10`, x, y + 5, { align: 'center' });
       });
-      y += 7;
+      y += 8;
     });
 
-    // Candidate details
+    // Candidate details (only top candidates)
     y += 10;
-    candidates.forEach(c => {
+    tableCandidates.forEach(c => {
       if (y > 250) {
         doc.addPage();
         doc.setFillColor(...dark);
@@ -220,13 +255,18 @@ const PDFGenerator = {
       doc.setFont('helvetica', 'normal');
       doc.setTextColor(...gray);
       doc.text(c.party, margin + doc.getTextWidth(c.name) + 5, y);
+      if (c.poll_pct) {
+        doc.setTextColor(...blue);
+        doc.text(`${c.poll_pct}%`, margin + contentWidth - 10, y, { align: 'right' });
+      }
       y += 6;
 
       doc.setFontSize(8);
       c.key_proposals.forEach(p => {
         doc.setTextColor(...white);
-        doc.text(`• ${p}`, margin + 4, y);
-        y += 4.5;
+        const propLines = doc.splitTextToSize(`- ${p}`, contentWidth - 8);
+        doc.text(propLines, margin + 4, y);
+        y += propLines.length * 4;
       });
       y += 5;
     });
@@ -262,7 +302,8 @@ const PDFGenerator = {
       doc.setFontSize(10);
       doc.setFont('helvetica', 'bold');
       doc.setTextColor(...white);
-      doc.text(`${issue.icon}  ${isEn ? issue.name_en : issue.name}`, margin, y);
+      const issIcon = this.sanitizeIcon(issue.icon || '');
+      doc.text(`${issIcon}  ${isEn ? issue.name_en : issue.name}`, margin, y);
       doc.setTextColor(...barColor);
       doc.text(`${issue.severity}/10`, margin + contentWidth - 10, y);
       y += 5;
