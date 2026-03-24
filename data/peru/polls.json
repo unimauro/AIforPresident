@@ -16,7 +16,10 @@
     { "id": "cal", "name": "C. Álvarez", "party": "País Para Todos", "color": "#96CEB4" },
     { "id": "wg", "name": "W. Grozo", "party": "Integridad Democrática", "color": "#6A0DAD" },
     { "id": "gf", "name": "G. Forsyth", "party": "Somos Perú", "color": "#E31937" },
-    { "id": "mv", "name": "M. Vizcarra", "party": "Perú Primero", "color": "#D4A017" }
+    { "id": "mv", "name": "M. Vizcarra", "party": "Perú Primero", "color": "#D4A017" },
+    { "id": "jn", "name": "J. Nieto", "party": "Buen Gobierno", "color": "#2C3E50" },
+    { "id": "rb", "name": "R. Belmont", "party": "Cívico Obras", "color": "#F39C12" },
+    { "id": "rs", "name": "R. Sánchez", "party": "Juntos por el Perú", "color": "#C0392B" }
   ],
   "polls": [
     {
@@ -59,7 +62,25 @@
       "pollster": "Ipsos",
       "date": "2026-03-06",
       "sample_size": 1500,
-      "results": { "rla": 11.7, "kf": 9.5, "alc": 4.8, "ca": 5.0, "cal": 6.0, "wg": 4.0, "gf": 2.0, "mv": 2.5 }
+      "results": { "rla": 11.7, "kf": 9.5, "alc": 4.8, "ca": 5.0, "cal": 6.0, "wg": 4.0, "gf": 2.0, "mv": 2.5, "jn": 0, "rb": 0, "rs": 0 }
+    },
+    {
+      "pollster": "CPI",
+      "date": "2026-03-07",
+      "sample_size": 1400,
+      "results": { "rla": 12.7, "kf": 8.0, "alc": 5.6, "ca": 3.4, "cal": 5.0, "wg": 4.8, "gf": 2.4, "mv": 2.5, "jn": 0, "rb": 0, "rs": 1.7 }
+    },
+    {
+      "pollster": "IEP",
+      "date": "2026-03-13",
+      "sample_size": 1500,
+      "results": { "rla": 11.7, "kf": 9.4, "alc": 6.8, "ca": 2.7, "cal": 3.9, "wg": 4.3, "gf": 0, "mv": 3.1, "jn": 0, "rb": 0, "rs": 3.7 }
+    },
+    {
+      "pollster": "Datum",
+      "date": "2026-03-22",
+      "sample_size": 1500,
+      "results": { "rla": 11.7, "kf": 11.9, "alc": 6.5, "ca": 3.6, "cal": 5.0, "wg": 2.5, "gf": 1.7, "mv": 1.2, "jn": 4.6, "rb": 2.4, "rs": 2.0 }
     }
   ]
 }
